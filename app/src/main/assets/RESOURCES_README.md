@@ -2,10 +2,11 @@
 
 ## Overview
 
-This CSV file contains domestic violence resources with **full intersectional support** (48 filter categories!) to ensure ALL survivors can find help - including those with dependents, from often-excluded populations, and facing transportation barriers.
+This CSV file contains domestic violence resources with **full intersectional support** (58 filter categories!) to ensure ALL survivors can find help - including those with dependents, from often-excluded populations, facing transportation barriers, AND needing reproductive healthcare access.
 
-**Current Count**: 410 high-quality resources (up from 300!)
-**Filter Categories**: 48 (up from 26!) - now includes dependent care, substance use, trafficking, TBI, and **TRANSPORTATION SUPPORT** (critical for rural survivors)!
+**Current Count**: 440 high-quality resources (up from 410!)
+**Filter Categories**: 58 (up from 48!) - now includes REPRODUCTIVE HEALTHCARE SAFETY (critical post-Roe)!
+**NEW RESOURCES**: 30 reproductive healthcare resources including clinics, recovery housing, childcare, financial assistance, and accompaniment services
 
 ## Resource Types
 
@@ -18,17 +19,41 @@ This CSV file contains domestic violence resources with **full intersectional su
 - **hotline**: 24/7 crisis support lines (~25 resources)
 - **counseling**: Mental health services, support groups (~60 resources)
   - Virtual counseling services for rural survivors: 10+ statewide programs
-- **legal_forms**: **NEW!** Pro se document templates (~50 resources - ALL 50 STATES!)
+- **legal_forms**: Pro se document templates (~50 resources - ALL 50 STATES!)
   - TSO/TRO (Temporary Restraining Order) forms
   - RSO/PPO (Permanent Protective Order) forms
   - Emergency custody forms
   - Free, downloadable, state-specific forms for survivors who can't afford lawyers
+- **reproductive_healthcare**: **CRITICAL POST-ROE!** Reproductive healthcare clinics (~10 resources)
+  - Clinics in accessible states (CA, NY, IL, WA, OR, CO, NM, MD, MN)
+  - Accept out-of-state patients
+  - Provide comprehensive reproductive healthcare services
+  - **WHY THIS MATTERS**: DV escalates dramatically with unwanted pregnancy
+- **recovery_housing**: Post-procedure recovery housing (~5 resources)
+  - Safe, confidential housing during recovery period
+  - 1-5 day stays available
+  - Meals, transportation, emotional support included
+- **childcare**: Childcare for survivors accessing healthcare (~5 resources)
+  - Childcare during medical appointments
+  - Childcare during recovery period
+  - Emergency and overnight care available
+  - **CRITICAL**: Most survivors have children and need care during appointments
+- **financial_assistance**: Abortion funds and financial support (~5 resources)
+  - Procedure funding assistance
+  - Travel cost coverage
+  - Lodging assistance
+  - Childcare funding
+- **accompaniment**: Travel and clinic accompaniment services (~5 resources)
+  - Volunteer accompaniment for safety during travel
+  - Clinic escort services
+  - Emotional support throughout journey
+  - Practical logistics assistance
 
 ## Geographic Coverage
 
 Resources span all 50 states with concentration in major metropolitan areas where marginalized survivors face highest barriers to services.
 
-## Intersectional Filters (48 Categories - EXPANDED AGAIN!)
+## Intersectional Filters (58 Categories - EXPANDED FOR POST-ROE HEALTHCARE SAFETY!)
 
 ### LGBTQIA+ Support
 - `servesLGBTQIA`: General LGBTQ+ friendly
@@ -95,7 +120,21 @@ Resources span all 50 states with concentration in major metropolitan areas wher
 
 **Why this matters:** Transportation is the #1 barrier preventing rural survivors from accessing shelters. Shelters are often 50-100+ miles away, there's no public transit, and abusers typically control the only vehicle. These fields enable survivors without transportation to find resources they can actually access.
 
-## CSV Structure (60 columns total)
+### Reproductive Healthcare Safety (NEW - CRITICAL POST-ROE!)
+- `providesReproductiveHealthcare`: Clinic/provider offering reproductive healthcare
+- `reproductiveHealthcareServicesJson`: JSON array of services: ["consultation", "pregnancy options counseling", "procedures", "post-procedure care"]
+- `acceptsOutOfStatePatients`: Critical - accepts patients traveling from restricted states
+- `providesRecoveryHousing`: Housing during recovery period before return travel
+- `recoveryHousingDuration`: Duration available: "1-2 days", "3-5 days", "1 week", "flexible"
+- `financialAssistanceAvailable`: Sliding scale, funding assistance for procedure costs
+- `travelFundingAvailable`: Helps cover transportation costs (flights, gas, lodging)
+- `childcareDuringAppointment`: Childcare while patient is at appointment/procedure
+- `childcareDuringRecovery`: Childcare during recovery period (often multi-day)
+- `accompanimentServices`: Volunteer accompaniment for safety/support during travel and appointment
+
+**Why this matters:** DV escalates dramatically with unwanted/unplanned pregnancy. Post-Roe, survivors in restrictive states face severe barriers to accessing legal reproductive healthcare. These filters help survivors safely coordinate the complete journey: finding an accessible clinic, arranging out-of-state travel, securing childcare for dependents, finding recovery housing, and getting financial assistance. This comprehensive support is often the difference between safety and remaining trapped in an abusive situation.
+
+## CSV Structure (70 columns total - UPDATED!)
 
 ```csv
 id,resourceType,organizationName,phone,website,email,
@@ -111,6 +150,7 @@ acceptsChildren,childAgeRestrictions,acceptsDependentAdults,acceptsPets,hasChild
 servesPregnant,servesSubstanceUse,servesTeenDating,servesElderAbuse,servesTrafficking,servesTBI,acceptsCriminalRecord,
 hasMedicalSupport,hasMentalHealthCounseling,traumaInformedCare,
 providesTransportation,transportationRadius,transportationPartnerships,offersVirtualServices,gasVoucherProgram,relocationAssistance,greyhoundHomeFreePartner,
+providesReproductiveHealthcare,reproductiveHealthcareServicesJson,acceptsOutOfStatePatients,providesRecoveryHousing,recoveryHousingDuration,financialAssistanceAvailable,travelFundingAvailable,childcareDuringAppointment,childcareDuringRecovery,accompanimentServices,
 lastVerified,verifiedBy,rating,reviewCount
 ```
 

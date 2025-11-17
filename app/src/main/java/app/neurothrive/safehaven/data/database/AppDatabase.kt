@@ -12,14 +12,16 @@ import app.neurothrive.safehaven.data.database.entities.*
  * - All sensitive fields encrypted before storage
  * - No cloud backup by default
  * - Supports secure deletion (cascade)
+ * - Healthcare journeys have additional privacy protections
  *
  * Entities:
  * 1. SafeHavenProfile - User settings + identity
  * 2. IncidentReport - Abuse documentation
  * 3. VerifiedDocument - Cryptographic verification
  * 4. EvidenceItem - Encrypted photos/videos/audio
- * 5. LegalResource - Intersectional resource database
+ * 5. LegalResource - Intersectional resource database (58 categories - includes healthcare)
  * 6. SurvivorProfile - Extended demographic data
+ * 7. HealthcareJourney - Reproductive healthcare travel coordination (NEW)
  */
 @Database(
     entities = [
@@ -28,9 +30,10 @@ import app.neurothrive.safehaven.data.database.entities.*
         VerifiedDocument::class,
         EvidenceItem::class,
         LegalResource::class,
-        SurvivorProfile::class
+        SurvivorProfile::class,
+        HealthcareJourney::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -42,6 +45,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun evidenceItemDao(): EvidenceItemDao
     abstract fun legalResourceDao(): LegalResourceDao
     abstract fun survivorProfileDao(): SurvivorProfileDao
+    abstract fun healthcareJourneyDao(): HealthcareJourneyDao
 
     companion object {
         const val DATABASE_NAME = "safehaven_db"

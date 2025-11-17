@@ -68,4 +68,10 @@ object DatabaseModule {
     fun provideSurvivorProfileDao(database: AppDatabase): SurvivorProfileDao {
         return database.survivorProfileDao()
     }
+
+    @Provides
+    @Singleton
+    fun provideHealthcareJourneyDao(database: AppDatabase): HealthcareJourneyDao {
+        return database.healthcareJourneyDao()
+    }
 }

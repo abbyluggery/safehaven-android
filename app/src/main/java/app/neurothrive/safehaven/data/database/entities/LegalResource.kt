@@ -6,9 +6,9 @@ import androidx.room.PrimaryKey
 
 /**
  * Legal Resource Entity
- * Purpose: Intersectional resource database (shelters, legal aid, hotlines, etc.)
+ * Purpose: Intersectional resource database (shelters, legal aid, hotlines, healthcare, etc.)
  *
- * INTERSECTIONAL FILTERS (48 CATEGORIES - CRITICAL):
+ * INTERSECTIONAL FILTERS (58 CATEGORIES - EXPANDED FOR HEALTHCARE SAFETY):
  * - LGBTQIA+ specialized resources (4 fields)
  * - BIPOC-led organizations (3 fields)
  * - Male survivor resources (1 field - very rare)
@@ -18,11 +18,16 @@ import androidx.room.PrimaryKey
  * - Vulnerable Populations (7 fields - pregnant, substance use, teen dating, elder abuse, trafficking, TBI, criminal record)
  * - Medical/Mental Health (3 fields - medical support, counseling, trauma-informed care)
  * - Transportation Support (7 fields - CRITICAL FOR RURAL - pickup service, virtual services, gas vouchers, Greyhound)
+ * - Reproductive Healthcare Safety (10 fields - NEW - CRITICAL POST-ROE)
  * - Language support (1 field)
  * - Cost (2 fields)
  *
  * This enables ALL survivors to find resources that will actually serve them and their dependents,
- * including rural survivors who face critical transportation barriers.
+ * including rural survivors who face critical transportation barriers and healthcare access barriers.
+ *
+ * HEALTHCARE SAFETY NOTE: DV escalates dramatically with unwanted/unplanned pregnancy.
+ * These filters help survivors safely access legal medical care, travel assistance,
+ * recovery housing, and childcare - critical for escaping abusive situations.
  */
 @Entity(
     tableName = "legal_resources",
@@ -33,7 +38,9 @@ import androidx.room.PrimaryKey
         Index("transInclusive"),
         Index("servesBIPOC"),
         Index("servesMaleIdentifying"),
-        Index("servesUndocumented")
+        Index("servesUndocumented"),
+        Index("providesReproductiveHealthcare"),
+        Index("acceptsOutOfStatePatients")
     ]
 )
 data class LegalResource(
@@ -122,6 +129,19 @@ data class LegalResource(
     val gasVoucherProgram: Boolean = false,  // Gas cards/mileage reimbursement
     val relocationAssistance: Boolean = false,  // Moving cost assistance
     val greyhoundHomeFreePartner: Boolean = false,  // Greyhound Home Free bus ticket partner
+
+    // INTERSECTIONAL FILTERS - Reproductive Healthcare Safety (CRITICAL POST-ROE)
+    // DV escalates with unwanted pregnancy - these resources help survivors access legal medical care
+    val providesReproductiveHealthcare: Boolean = false,  // Clinic/provider offering reproductive healthcare
+    val reproductiveHealthcareServicesJson: String? = null,  // JSON array: ["consultation", "pregnancy options counseling", "procedures", "post-procedure care"]
+    val acceptsOutOfStatePatients: Boolean = false,  // Critical - accepts patients traveling from restricted states
+    val providesRecoveryHousing: Boolean = false,  // Housing during recovery period before return travel
+    val recoveryHousingDuration: String? = null,  // "1-2 days", "3-5 days", "1 week", "flexible"
+    val financialAssistanceAvailable: Boolean = false,  // Sliding scale, funding assistance for procedure costs
+    val travelFundingAvailable: Boolean = false,  // Helps cover transportation costs (flights, gas, lodging)
+    val childcareDuringAppointment: Boolean = false,  // Childcare while patient is at appointment/procedure
+    val childcareDuringRecovery: Boolean = false,  // Childcare during recovery period (often multi-day)
+    val accompanimentServices: Boolean = false,  // Volunteer accompaniment for safety/support during travel and appointment
 
     // Verification
     val lastVerified: Long,
