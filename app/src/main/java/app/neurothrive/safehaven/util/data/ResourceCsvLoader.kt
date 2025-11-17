@@ -142,11 +142,19 @@ class ResourceCsvLoader @Inject constructor(
             hasMedicalSupport = fields[46] == "1",
             hasMentalHealthCounseling = fields[47] == "1",
             traumaInformedCare = fields[48] == "1",
-            // Verification fields (shifted from 34-37 to 49-52)
-            lastVerified = fields[49].toLong(),
-            verifiedBy = fields[50].takeIf { it.isNotBlank() },
-            rating = fields[51].toFloatOrNull(),
-            reviewCount = fields[52].toIntOrNull() ?: 0
+            // NEW FIELDS: Transportation Support (fields 49-55) - CRITICAL FOR RURAL
+            providesTransportation = fields[49] == "1",
+            transportationRadius = fields[50].takeIf { it.isNotBlank() && it != "N/A" },
+            transportationPartnerships = fields[51].takeIf { it.isNotBlank() && it != "[]" },
+            offersVirtualServices = fields[52] == "1",
+            gasVoucherProgram = fields[53] == "1",
+            relocationAssistance = fields[54] == "1",
+            greyhoundHomeFreePartner = fields[55] == "1",
+            // Verification fields (shifted from 49-52 to 56-59)
+            lastVerified = fields[56].toLong(),
+            verifiedBy = fields[57].takeIf { it.isNotBlank() },
+            rating = fields[58].toFloatOrNull(),
+            reviewCount = fields[59].toIntOrNull() ?: 0
         )
     }
 

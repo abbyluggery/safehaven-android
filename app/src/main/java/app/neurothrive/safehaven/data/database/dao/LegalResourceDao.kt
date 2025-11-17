@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
  * DAO for Legal Resources
  * Handles intersectional resource database queries
  *
- * CRITICAL: Supports filtering by 41 intersectional categories:
+ * CRITICAL: Supports filtering by 48 intersectional categories:
  * - LGBTQIA+, Trans, Non-binary
  * - BIPOC, culturally specific
  * - Male-identifying survivors
@@ -17,6 +17,7 @@ import kotlinx.coroutines.flow.Flow
  * - Dependent care (children, dependent adults, pets)
  * - Vulnerable populations (pregnant, substance use, teen dating, elder abuse, trafficking, TBI, criminal record)
  * - Medical/mental health support
+ * - Transportation support (CRITICAL FOR RURAL - pickup, virtual services, gas vouchers, Greyhound)
  */
 @Dao
 interface LegalResourceDao {
@@ -56,6 +57,7 @@ interface LegalResourceDao {
         AND (:isTrafficking = 0 OR servesTrafficking = 1)
         AND (:hasTBI = 0 OR servesTBI = 1)
         AND (:hasCriminalRecord = 0 OR acceptsCriminalRecord = 1)
+        AND (:needsTransportation = 0 OR providesTransportation = 1 OR offersVirtualServices = 1 OR gasVoucherProgram = 1 OR greyhoundHomeFreePartner = 1)
         LIMIT 100
     """)
     suspend fun getFiltered(
@@ -76,7 +78,8 @@ interface LegalResourceDao {
         isElder: Boolean,
         isTrafficking: Boolean,
         hasTBI: Boolean,
-        hasCriminalRecord: Boolean
+        hasCriminalRecord: Boolean,
+        needsTransportation: Boolean
     ): List<LegalResource>
 
     @Query("SELECT * FROM legal_resources WHERE state = :state")

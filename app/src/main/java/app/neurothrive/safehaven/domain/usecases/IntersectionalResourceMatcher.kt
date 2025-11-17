@@ -15,7 +15,7 @@ import kotlin.math.sqrt
  * Intersectional Resource Matcher
  *
  * CRITICAL EQUITY FEATURE:
- * Matches survivors with resources based on intersectional identity (41 categories).
+ * Matches survivors with resources based on intersectional identity (48 categories).
  *
  * SCORING ALGORITHM (EXPANDED):
  * Identity-based bonuses:
@@ -27,13 +27,13 @@ import kotlin.math.sqrt
  * - Disabled survivors: +15 pts for wheelchair accessible
  * - Deaf survivors: +15 pts for ASL interpreters
  *
- * Dependent care bonuses (NEW):
+ * Dependent care bonuses:
  * - Has children: +25 pts if accepts children (60-70% of survivors have kids!)
  * - Has dependent adults: +20 pts if accepts dependent adults
  * - Has pets: +20 pts if accepts pets (50% delay leaving without this)
  * - Needs childcare: +10 pts if has on-site childcare
  *
- * Vulnerable population bonuses (NEW):
+ * Vulnerable population bonuses:
  * - Pregnant: +20 pts if serves pregnant survivors
  * - Substance use: +25 pts if low-barrier/harm reduction (often excluded elsewhere)
  * - Teen dating violence: +20 pts if serves minors
@@ -42,17 +42,25 @@ import kotlin.math.sqrt
  * - TBI: +15 pts if TBI support (very common in DV)
  * - Criminal record: +15 pts if accepts records
  *
- * Medical/mental health bonuses (NEW):
+ * Medical/mental health bonuses:
  * - Medical support: +10 pts
  * - Mental health counseling: +10 pts
  * - Trauma-informed care: +10 pts
+ *
+ * Transportation bonuses (NEW - CRITICAL FOR RURAL):
+ * - No transportation + provides pickup: +35 pts (GAME-CHANGER for rural survivors)
+ * - No transportation + virtual services: +25 pts (can access without travel)
+ * - No transportation + gas vouchers: +20 pts (enables self-transport)
+ * - Greyhound Home Free partner: +15 pts (nationwide bus access)
+ * - Relocation assistance: +10 pts (moving cost help)
  *
  * Accessibility bonuses:
  * - Distance: +10 pts < 5 miles, +5 pts < 25 miles, -10 pts > 100 miles
  * - Free resources: +5 pts
  * - 24/7 availability: +5 pts
  *
- * This ensures ALL survivors find resources that will serve them and their dependents.
+ * This ensures ALL survivors find resources that will serve them and their dependents,
+ * including rural survivors facing critical transportation barriers.
  */
 
 data class ScoredResource(
@@ -219,6 +227,33 @@ class IntersectionalResourceMatcher @Inject constructor(
         if (resource.hasMedicalSupport) score += 10.0
         if (resource.hasMentalHealthCounseling) score += 10.0
         if (resource.traumaInformedCare) score += 10.0
+
+        // TRANSPORTATION BONUSES (NEW - CRITICAL FOR RURAL SURVIVORS)
+
+        if (!profile.hasTransportation) {
+            // Pickup service - GAME-CHANGER for rural survivors
+            if (resource.providesTransportation) {
+                score += 35.0  // Highest bonus - this is often make-or-break
+            }
+
+            // Virtual services - can access without traveling
+            if (resource.offersVirtualServices) {
+                score += 25.0
+            }
+
+            // Gas vouchers - enables self-transport
+            if (resource.gasVoucherProgram) {
+                score += 20.0
+            }
+
+            // Greyhound Home Free - nationwide bus access
+            if (resource.greyhoundHomeFreePartner) {
+                score += 15.0
+            }
+        }
+
+        // Relocation assistance (helpful even with transportation)
+        if (resource.relocationAssistance) score += 10.0
 
         // Distance bonus (if location provided)
         if (currentLat != null && currentLon != null &&

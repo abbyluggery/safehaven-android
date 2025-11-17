@@ -2,10 +2,10 @@
 
 ## Overview
 
-This CSV file contains domestic violence resources with **full intersectional support** (41 filter categories!) to ensure ALL survivors can find help - including those with dependents and from often-excluded populations.
+This CSV file contains domestic violence resources with **full intersectional support** (48 filter categories!) to ensure ALL survivors can find help - including those with dependents, from often-excluded populations, and facing transportation barriers.
 
 **Current Count**: 300 high-quality resources (expandable to 1,000+)
-**Filter Categories**: 41 (up from 26) - now includes dependent care, substance use, trafficking, TBI, and more!
+**Filter Categories**: 48 (up from 26!) - now includes dependent care, substance use, trafficking, TBI, and **TRANSPORTATION SUPPORT** (critical for rural survivors)!
 
 ## Resource Types
 
@@ -18,7 +18,7 @@ This CSV file contains domestic violence resources with **full intersectional su
 
 Resources span all 50 states with concentration in major metropolitan areas where marginalized survivors face highest barriers to services.
 
-## Intersectional Filters (41 Categories - EXPANDED!)
+## Intersectional Filters (48 Categories - EXPANDED AGAIN!)
 
 ### LGBTQIA+ Support
 - `servesLGBTQIA`: General LGBTQ+ friendly
@@ -74,7 +74,18 @@ Resources span all 50 states with concentration in major metropolitan areas wher
 - `hasMentalHealthCounseling`: Mental health counseling services
 - `traumaInformedCare`: Trauma-informed care certification
 
-## CSV Structure (53 columns total)
+### Transportation Support (NEW - GAME-CHANGER FOR RURAL SURVIVORS!)
+- `providesTransportation`: Sends van/volunteer driver to pick up survivor
+- `transportationRadius`: How far they'll travel ("50 miles", "100 miles", "statewide", "nationwide")
+- `transportationPartnerships`: JSON array of partner transportation programs
+- `offersVirtualServices`: Phone/video counseling, legal aid (accessible without travel)
+- `gasVoucherProgram`: Gas cards or mileage reimbursement program
+- `relocationAssistance`: Moving cost assistance for survivors relocating
+- `greyhoundHomeFreePartner`: Greyhound Home Free bus ticket partner (nationwide)
+
+**Why this matters:** Transportation is the #1 barrier preventing rural survivors from accessing shelters. Shelters are often 50-100+ miles away, there's no public transit, and abusers typically control the only vehicle. These fields enable survivors without transportation to find resources they can actually access.
+
+## CSV Structure (60 columns total)
 
 ```csv
 id,resourceType,organizationName,phone,website,email,
@@ -89,6 +100,7 @@ languagesJson,isFree,slidingScale,
 acceptsChildren,childAgeRestrictions,acceptsDependentAdults,acceptsPets,hasChildcare,
 servesPregnant,servesSubstanceUse,servesTeenDating,servesElderAbuse,servesTrafficking,servesTBI,acceptsCriminalRecord,
 hasMedicalSupport,hasMentalHealthCounseling,traumaInformedCare,
+providesTransportation,transportationRadius,transportationPartnerships,offersVirtualServices,gasVoucherProgram,relocationAssistance,greyhoundHomeFreePartner,
 lastVerified,verifiedBy,rating,reviewCount
 ```
 
@@ -140,9 +152,9 @@ All resources include:
 - ✅ Last verified timestamp
 - ✅ User ratings (when available)
 
-## Scoring Algorithm (EXPANDED!)
+## Scoring Algorithm (EXPANDED AGAIN!)
 
-Resources are scored based on survivor identity (41 categories):
+Resources are scored based on survivor identity (48 categories):
 
 **Identity-based bonuses:**
 - Trans survivors: +30 pts for trans-inclusive
@@ -153,13 +165,13 @@ Resources are scored based on survivor identity (41 categories):
 - Disabled: +15 pts for accessible
 - Deaf: +15 pts for ASL
 
-**Dependent care bonuses (NEW):**
+**Dependent care bonuses:**
 - Has children: +25 pts (60-70% of survivors have kids!)
 - Has dependent adults: +20 pts
 - Has pets: +20 pts (50% delay leaving without this option)
 - Needs childcare: +10 pts if on-site childcare
 
-**Vulnerable population bonuses (NEW):**
+**Vulnerable population bonuses:**
 - Substance use: +25 pts (often excluded from shelters)
 - Trafficking: +25 pts
 - Pregnant: +20 pts
@@ -168,10 +180,17 @@ Resources are scored based on survivor identity (41 categories):
 - TBI: +15 pts (very common in DV)
 - Criminal record: +15 pts
 
-**Medical/mental health bonuses (NEW):**
+**Medical/mental health bonuses:**
 - Medical support: +10 pts
 - Mental health counseling: +10 pts
 - Trauma-informed care: +10 pts
+
+**Transportation bonuses (NEW - GAME-CHANGER FOR RURAL):**
+- No transportation + provides pickup: +35 pts (often make-or-break!)
+- No transportation + virtual services: +25 pts (access without travel)
+- No transportation + gas vouchers: +20 pts (enables self-transport)
+- Greyhound Home Free partner: +15 pts (nationwide bus access)
+- Relocation assistance: +10 pts (moving cost help)
 
 **Accessibility bonuses:**
 - Distance: +10 pts < 5 miles, +5 pts < 25 miles

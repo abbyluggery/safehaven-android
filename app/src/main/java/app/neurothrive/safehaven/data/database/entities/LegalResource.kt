@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
  * Legal Resource Entity
  * Purpose: Intersectional resource database (shelters, legal aid, hotlines, etc.)
  *
- * INTERSECTIONAL FILTERS (41 CATEGORIES - CRITICAL):
+ * INTERSECTIONAL FILTERS (48 CATEGORIES - CRITICAL):
  * - LGBTQIA+ specialized resources (4 fields)
  * - BIPOC-led organizations (3 fields)
  * - Male survivor resources (1 field - very rare)
@@ -17,10 +17,12 @@ import androidx.room.PrimaryKey
  * - Dependent Care (5 fields - children, dependent adults, pets, childcare)
  * - Vulnerable Populations (7 fields - pregnant, substance use, teen dating, elder abuse, trafficking, TBI, criminal record)
  * - Medical/Mental Health (3 fields - medical support, counseling, trauma-informed care)
+ * - Transportation Support (7 fields - CRITICAL FOR RURAL - pickup service, virtual services, gas vouchers, Greyhound)
  * - Language support (1 field)
  * - Cost (2 fields)
  *
- * This enables ALL survivors to find resources that will actually serve them and their dependents.
+ * This enables ALL survivors to find resources that will actually serve them and their dependents,
+ * including rural survivors who face critical transportation barriers.
  */
 @Entity(
     tableName = "legal_resources",
@@ -111,6 +113,15 @@ data class LegalResource(
     val hasMedicalSupport: Boolean = false,
     val hasMentalHealthCounseling: Boolean = false,
     val traumaInformedCare: Boolean = false,
+
+    // INTERSECTIONAL FILTERS - Transportation Support (CRITICAL FOR RURAL)
+    val providesTransportation: Boolean = false,  // Sends van/volunteer to pick up survivor
+    val transportationRadius: String? = null,  // "50 miles", "100 miles", "statewide", "nationwide"
+    val transportationPartnerships: String? = null,  // JSON array of partner orgs/programs
+    val offersVirtualServices: Boolean = false,  // Phone/video counseling, legal aid (serves rural without travel)
+    val gasVoucherProgram: Boolean = false,  // Gas cards/mileage reimbursement
+    val relocationAssistance: Boolean = false,  // Moving cost assistance
+    val greyhoundHomeFreePartner: Boolean = false,  // Greyhound Home Free bus ticket partner
 
     // Verification
     val lastVerified: Long,
