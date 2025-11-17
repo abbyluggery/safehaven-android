@@ -33,6 +33,10 @@ sealed class Screen(val route: String) {
     object HealthcareJourneyDetail : Screen("healthcare_journey/{journeyId}") {
         fun createRoute(journeyId: String) = "healthcare_journey/$journeyId"
     }
+
+    // Abuse Resources & SOS
+    object AbuseResources : Screen("abuse_resources")
+    object EmergencyContacts : Screen("emergency_contacts")
 }
 
 /**
@@ -200,6 +204,20 @@ fun SafeHavenNavGraph(
                     // TODO: Navigate to edit journey screen
                     navController.popBackStack()
                 }
+            )
+        }
+
+        // Abuse Resources & Education
+        composable(Screen.AbuseResources.route) {
+            AbuseResourcesScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        // Emergency Contacts Settings
+        composable(Screen.EmergencyContacts.route) {
+            EmergencyContactsScreen(
+                onBack = { navController.popBackStack() }
             )
         }
     }
