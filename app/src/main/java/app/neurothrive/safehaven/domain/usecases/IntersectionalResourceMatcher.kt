@@ -15,9 +15,10 @@ import kotlin.math.sqrt
  * Intersectional Resource Matcher
  *
  * CRITICAL EQUITY FEATURE:
- * Matches survivors with resources based on intersectional identity.
+ * Matches survivors with resources based on intersectional identity (41 categories).
  *
- * SCORING ALGORITHM:
+ * SCORING ALGORITHM (EXPANDED):
+ * Identity-based bonuses:
  * - Trans survivors: +30 pts for trans-inclusive shelters
  * - Undocumented survivors: +30 pts for U-Visa support, +10 for no ICE contact
  * - Male survivors: +25 pts (very few resources available)
@@ -25,11 +26,33 @@ import kotlin.math.sqrt
  * - BIPOC survivors: +20 pts for BIPOC-led orgs
  * - Disabled survivors: +15 pts for wheelchair accessible
  * - Deaf survivors: +15 pts for ASL interpreters
+ *
+ * Dependent care bonuses (NEW):
+ * - Has children: +25 pts if accepts children (60-70% of survivors have kids!)
+ * - Has dependent adults: +20 pts if accepts dependent adults
+ * - Has pets: +20 pts if accepts pets (50% delay leaving without this)
+ * - Needs childcare: +10 pts if has on-site childcare
+ *
+ * Vulnerable population bonuses (NEW):
+ * - Pregnant: +20 pts if serves pregnant survivors
+ * - Substance use: +25 pts if low-barrier/harm reduction (often excluded elsewhere)
+ * - Teen dating violence: +20 pts if serves minors
+ * - Elder abuse: +20 pts if serves 60+
+ * - Trafficking: +25 pts if trafficking-specialized
+ * - TBI: +15 pts if TBI support (very common in DV)
+ * - Criminal record: +15 pts if accepts records
+ *
+ * Medical/mental health bonuses (NEW):
+ * - Medical support: +10 pts
+ * - Mental health counseling: +10 pts
+ * - Trauma-informed care: +10 pts
+ *
+ * Accessibility bonuses:
  * - Distance: +10 pts < 5 miles, +5 pts < 25 miles, -10 pts > 100 miles
  * - Free resources: +5 pts
  * - 24/7 availability: +5 pts
  *
- * This ensures marginalized survivors find resources that will actually serve them.
+ * This ensures ALL survivors find resources that will serve them and their dependents.
  */
 
 data class ScoredResource(
@@ -135,6 +158,67 @@ class IntersectionalResourceMatcher @Inject constructor(
         //     score += 15.0
         //     if (resource.aslInterpreter) score += 10.0
         // }
+
+        // DEPENDENT CARE BONUSES (NEW - CRITICAL)
+
+        // Children (60-70% of DV survivors have kids!)
+        if (profile.hasChildren && resource.acceptsChildren) {
+            score += 25.0
+            if (resource.hasChildcare) score += 10.0
+        }
+
+        // Dependent adults (elderly parents, adult disabled children)
+        if (profile.hasDependentAdults && resource.acceptsDependentAdults) {
+            score += 20.0
+        }
+
+        // Pets (50% of survivors delay leaving without pet option)
+        if (profile.hasPets && resource.acceptsPets) {
+            score += 20.0
+        }
+
+        // VULNERABLE POPULATION BONUSES (NEW)
+
+        // Pregnant survivors
+        if (profile.isPregnant && resource.servesPregnant) {
+            score += 20.0
+        }
+
+        // Substance use disorders (often excluded from shelters)
+        if (profile.hasSubstanceUse && resource.servesSubstanceUse) {
+            score += 25.0  // Higher score - these survivors face major barriers
+        }
+
+        // Teen dating violence
+        if (profile.isTeenDating && resource.servesTeenDating) {
+            score += 20.0
+        }
+
+        // Elder abuse (60+)
+        if (profile.isElderAbuse && resource.servesElderAbuse) {
+            score += 20.0
+        }
+
+        // Human trafficking
+        if (profile.isTraffickingSurvivor && resource.servesTrafficking) {
+            score += 25.0
+        }
+
+        // Traumatic brain injury (very common in DV - up to 90%)
+        if (profile.hasTBI && resource.servesTBI) {
+            score += 15.0
+        }
+
+        // Criminal record (many survivors have records due to coerced crimes)
+        if (profile.hasCriminalRecord && resource.acceptsCriminalRecord) {
+            score += 15.0
+        }
+
+        // MEDICAL/MENTAL HEALTH BONUSES (NEW)
+
+        if (resource.hasMedicalSupport) score += 10.0
+        if (resource.hasMentalHealthCounseling) score += 10.0
+        if (resource.traumaInformedCare) score += 10.0
 
         // Distance bonus (if location provided)
         if (currentLat != null && currentLon != null &&

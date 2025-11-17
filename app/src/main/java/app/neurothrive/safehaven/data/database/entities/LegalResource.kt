@@ -8,16 +8,19 @@ import androidx.room.PrimaryKey
  * Legal Resource Entity
  * Purpose: Intersectional resource database (shelters, legal aid, hotlines, etc.)
  *
- * INTERSECTIONAL FILTERS (CRITICAL):
- * - LGBTQIA+ specialized resources
- * - Trans-inclusive shelters
- * - BIPOC-led organizations
- * - Male survivor resources (very rare)
- * - Undocumented survivor support (U-Visa, no ICE contact)
- * - Disability accessible
- * - Deaf/ASL services
+ * INTERSECTIONAL FILTERS (41 CATEGORIES - CRITICAL):
+ * - LGBTQIA+ specialized resources (4 fields)
+ * - BIPOC-led organizations (3 fields)
+ * - Male survivor resources (1 field - very rare)
+ * - Undocumented survivor support (4 fields - U-Visa, no ICE contact)
+ * - Disability accessible (4 fields - wheelchair, Deaf/ASL)
+ * - Dependent Care (5 fields - children, dependent adults, pets, childcare)
+ * - Vulnerable Populations (7 fields - pregnant, substance use, teen dating, elder abuse, trafficking, TBI, criminal record)
+ * - Medical/Mental Health (3 fields - medical support, counseling, trauma-informed care)
+ * - Language support (1 field)
+ * - Cost (2 fields)
  *
- * This enables marginalized survivors to find resources that will actually serve them.
+ * This enables ALL survivors to find resources that will actually serve them and their dependents.
  */
 @Entity(
     tableName = "legal_resources",
@@ -87,6 +90,27 @@ data class LegalResource(
     // Cost
     val isFree: Boolean = true,
     val slidingScale: Boolean = false,
+
+    // INTERSECTIONAL FILTERS - Dependent Care
+    val acceptsChildren: Boolean = false,
+    val childAgeRestrictions: String? = null,  // "0-12", "0-18", "Any age", null = no restrictions if acceptsChildren=true
+    val acceptsDependentAdults: Boolean = false,  // Elderly parents, adult disabled children
+    val acceptsPets: Boolean = false,
+    val hasChildcare: Boolean = false,
+
+    // INTERSECTIONAL FILTERS - Additional Vulnerable Populations
+    val servesPregnant: Boolean = false,
+    val servesSubstanceUse: Boolean = false,  // Harm reduction/low barrier
+    val servesTeenDating: Boolean = false,  // Teen dating violence (minors)
+    val servesElderAbuse: Boolean = false,  // Elder abuse victims (60+)
+    val servesTrafficking: Boolean = false,  // Human trafficking survivors
+    val servesTBI: Boolean = false,  // Traumatic brain injury support
+    val acceptsCriminalRecord: Boolean = false,  // Accepts survivors with criminal records
+
+    // INTERSECTIONAL FILTERS - Medical/Mental Health
+    val hasMedicalSupport: Boolean = false,
+    val hasMentalHealthCounseling: Boolean = false,
+    val traumaInformedCare: Boolean = false,
 
     // Verification
     val lastVerified: Long,

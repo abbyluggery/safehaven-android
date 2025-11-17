@@ -124,10 +124,29 @@ class ResourceCsvLoader @Inject constructor(
             languagesJson = fields[31],
             isFree = fields[32] == "1",
             slidingScale = fields[33] == "1",
-            lastVerified = fields[34].toLong(),
-            verifiedBy = fields[35].takeIf { it.isNotBlank() },
-            rating = fields[36].toFloatOrNull(),
-            reviewCount = fields[37].toIntOrNull() ?: 0
+            // NEW FIELDS: Dependent Care (fields 34-38)
+            acceptsChildren = fields[34] == "1",
+            childAgeRestrictions = fields[35].takeIf { it.isNotBlank() && it != "N/A" },
+            acceptsDependentAdults = fields[36] == "1",
+            acceptsPets = fields[37] == "1",
+            hasChildcare = fields[38] == "1",
+            // NEW FIELDS: Vulnerable Populations (fields 39-45)
+            servesPregnant = fields[39] == "1",
+            servesSubstanceUse = fields[40] == "1",
+            servesTeenDating = fields[41] == "1",
+            servesElderAbuse = fields[42] == "1",
+            servesTrafficking = fields[43] == "1",
+            servesTBI = fields[44] == "1",
+            acceptsCriminalRecord = fields[45] == "1",
+            // NEW FIELDS: Medical/Mental Health (fields 46-48)
+            hasMedicalSupport = fields[46] == "1",
+            hasMentalHealthCounseling = fields[47] == "1",
+            traumaInformedCare = fields[48] == "1",
+            // Verification fields (shifted from 34-37 to 49-52)
+            lastVerified = fields[49].toLong(),
+            verifiedBy = fields[50].takeIf { it.isNotBlank() },
+            rating = fields[51].toFloatOrNull(),
+            reviewCount = fields[52].toIntOrNull() ?: 0
         )
     }
 

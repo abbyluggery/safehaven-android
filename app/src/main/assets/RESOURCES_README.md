@@ -2,9 +2,10 @@
 
 ## Overview
 
-This CSV file contains domestic violence resources with **full intersectional support** to ensure marginalized survivors can find help.
+This CSV file contains domestic violence resources with **full intersectional support** (41 filter categories!) to ensure ALL survivors can find help - including those with dependents and from often-excluded populations.
 
-**Current Count**: 50 high-quality resources (expandable to 1,000+)
+**Current Count**: 300 high-quality resources (expandable to 1,000+)
+**Filter Categories**: 41 (up from 26) - now includes dependent care, substance use, trafficking, TBI, and more!
 
 ## Resource Types
 
@@ -17,7 +18,7 @@ This CSV file contains domestic violence resources with **full intersectional su
 
 Resources span all 50 states with concentration in major metropolitan areas where marginalized survivors face highest barriers to services.
 
-## Intersectional Filters (26 Categories)
+## Intersectional Filters (41 Categories - EXPANDED!)
 
 ### LGBTQIA+ Support
 - `servesLGBTQIA`: General LGBTQ+ friendly
@@ -52,7 +53,28 @@ Resources span all 50 states with concentration in major metropolitan areas wher
 - `isFree`: Completely free services
 - `slidingScale`: Sliding scale payment
 
-## CSV Structure
+### Dependent Care (NEW - CRITICAL)
+- `acceptsChildren`: Allows survivors to bring minor children (60-70% have kids!)
+- `childAgeRestrictions`: Age limits for children (e.g., "0-12", "0-18", "Any age")
+- `acceptsDependentAdults`: Allows elderly parents or adult disabled children
+- `acceptsPets`: Allows pets or has pet fostering (50% delay leaving without this)
+- `hasChildcare`: Provides on-site childcare services
+
+### Vulnerable Populations (NEW - CRITICAL)
+- `servesPregnant`: Serves pregnant survivors
+- `servesSubstanceUse`: Low-barrier/harm reduction approach for substance use disorders
+- `servesTeenDating`: Serves teen dating violence survivors (minors)
+- `servesElderAbuse`: Serves elder abuse victims (age 60+)
+- `servesTrafficking`: Serves human trafficking survivors
+- `servesTBI`: Traumatic brain injury support (very common in DV - up to 90%)
+- `acceptsCriminalRecord`: Accepts survivors with criminal records (often from coerced crimes)
+
+### Medical/Mental Health Support (NEW)
+- `hasMedicalSupport`: On-site medical care or medical partnerships
+- `hasMentalHealthCounseling`: Mental health counseling services
+- `traumaInformedCare`: Trauma-informed care certification
+
+## CSV Structure (53 columns total)
 
 ```csv
 id,resourceType,organizationName,phone,website,email,
@@ -64,6 +86,9 @@ servesMaleIdentifying,
 servesUndocumented,uVisaSupport,vawaSupport,noICEContact,
 servesDisabled,wheelchairAccessible,servesDeaf,aslInterpreter,
 languagesJson,isFree,slidingScale,
+acceptsChildren,childAgeRestrictions,acceptsDependentAdults,acceptsPets,hasChildcare,
+servesPregnant,servesSubstanceUse,servesTeenDating,servesElderAbuse,servesTrafficking,servesTBI,acceptsCriminalRecord,
+hasMedicalSupport,hasMentalHealthCounseling,traumaInformedCare,
 lastVerified,verifiedBy,rating,reviewCount
 ```
 
@@ -115,9 +140,11 @@ All resources include:
 - ✅ Last verified timestamp
 - ✅ User ratings (when available)
 
-## Scoring Algorithm
+## Scoring Algorithm (EXPANDED!)
 
-Resources are scored based on survivor identity:
+Resources are scored based on survivor identity (41 categories):
+
+**Identity-based bonuses:**
 - Trans survivors: +30 pts for trans-inclusive
 - Undocumented: +30 pts for U-Visa support
 - Male: +25 pts (very few resources)
@@ -125,7 +152,31 @@ Resources are scored based on survivor identity:
 - BIPOC: +20 pts for BIPOC-led
 - Disabled: +15 pts for accessible
 - Deaf: +15 pts for ASL
+
+**Dependent care bonuses (NEW):**
+- Has children: +25 pts (60-70% of survivors have kids!)
+- Has dependent adults: +20 pts
+- Has pets: +20 pts (50% delay leaving without this option)
+- Needs childcare: +10 pts if on-site childcare
+
+**Vulnerable population bonuses (NEW):**
+- Substance use: +25 pts (often excluded from shelters)
+- Trafficking: +25 pts
+- Pregnant: +20 pts
+- Teen dating violence: +20 pts
+- Elder abuse: +20 pts
+- TBI: +15 pts (very common in DV)
+- Criminal record: +15 pts
+
+**Medical/mental health bonuses (NEW):**
+- Medical support: +10 pts
+- Mental health counseling: +10 pts
+- Trauma-informed care: +10 pts
+
+**Accessibility bonuses:**
 - Distance: +10 pts < 5 miles, +5 pts < 25 miles
+- Free resources: +5 pts
+- 24/7 availability: +5 pts
 
 ## Expansion Plan
 

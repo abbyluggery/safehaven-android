@@ -8,12 +8,15 @@ import kotlinx.coroutines.flow.Flow
  * DAO for Legal Resources
  * Handles intersectional resource database queries
  *
- * CRITICAL: Supports filtering by intersectional identities:
+ * CRITICAL: Supports filtering by 41 intersectional categories:
  * - LGBTQIA+, Trans, Non-binary
  * - BIPOC, culturally specific
  * - Male-identifying survivors
  * - Undocumented survivors
  * - Disabled, Deaf/ASL
+ * - Dependent care (children, dependent adults, pets)
+ * - Vulnerable populations (pregnant, substance use, teen dating, elder abuse, trafficking, TBI, criminal record)
+ * - Medical/mental health support
  */
 @Dao
 interface LegalResourceDao {
@@ -43,6 +46,16 @@ interface LegalResourceDao {
         AND (:undoc = 0 OR servesUndocumented = 1)
         AND (:disabled = 0 OR servesDisabled = 1)
         AND (:deaf = 0 OR servesDeaf = 1)
+        AND (:hasChildren = 0 OR acceptsChildren = 1)
+        AND (:hasDependentAdults = 0 OR acceptsDependentAdults = 1)
+        AND (:hasPets = 0 OR acceptsPets = 1)
+        AND (:isPregnant = 0 OR servesPregnant = 1)
+        AND (:hasSubstanceUse = 0 OR servesSubstanceUse = 1)
+        AND (:isTeen = 0 OR servesTeenDating = 1)
+        AND (:isElder = 0 OR servesElderAbuse = 1)
+        AND (:isTrafficking = 0 OR servesTrafficking = 1)
+        AND (:hasTBI = 0 OR servesTBI = 1)
+        AND (:hasCriminalRecord = 0 OR acceptsCriminalRecord = 1)
         LIMIT 100
     """)
     suspend fun getFiltered(
@@ -53,7 +66,17 @@ interface LegalResourceDao {
         male: Boolean,
         undoc: Boolean,
         disabled: Boolean,
-        deaf: Boolean
+        deaf: Boolean,
+        hasChildren: Boolean,
+        hasDependentAdults: Boolean,
+        hasPets: Boolean,
+        isPregnant: Boolean,
+        hasSubstanceUse: Boolean,
+        isTeen: Boolean,
+        isElder: Boolean,
+        isTrafficking: Boolean,
+        hasTBI: Boolean,
+        hasCriminalRecord: Boolean
     ): List<LegalResource>
 
     @Query("SELECT * FROM legal_resources WHERE state = :state")
