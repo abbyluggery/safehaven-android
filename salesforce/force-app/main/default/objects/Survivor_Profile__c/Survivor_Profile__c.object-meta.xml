@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Survivor Profile</label>
+    <pluralLabel>Survivor Profiles</pluralLabel>
+    <nameField>
+        <label>Profile ID</label>
+        <type>AutoNumber</type>
+        <displayFormat>SP-{0000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>Private</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+
+    <description>Intersectional identity profile for resource matching. This data enables SafeHaven to match survivors with culturally competent, identity-affirming resources.</description>
+
+    <!-- User Relationship -->
+    <fields>
+        <fullName>User_ID__c</fullName>
+        <label>User ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <unique>true</unique>
+        <externalId>true</externalId>
+        <description>Unique identifier for the user (matches Android app userId)</description>
+    </fields>
+
+    <fields>
+        <fullName>SafeHaven_Profile__c</fullName>
+        <label>SafeHaven Profile</label>
+        <type>Lookup</type>
+        <referenceTo>SafeHaven_Profile__c</referenceTo>
+        <relationshipLabel>Survivor Profiles</relationshipLabel>
+        <relationshipName>Survivor_Profiles</relationshipName>
+        <description>Link to user's SafeHaven profile</description>
+    </fields>
+
+    <!-- Sexual Orientation & Gender Identity -->
+    <fields>
+        <fullName>Is_LGBTQIA__c</fullName>
+        <label>LGBTQIA+</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Identifies as LGBTQIA+</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_Transgender__c</fullName>
+        <label>Transgender</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Identifies as transgender</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_Nonbinary__c</fullName>
+        <label>Non-binary</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Identifies as non-binary</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_Male_Identifying__c</fullName>
+        <label>Male-Identifying</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Identifies as male (important for finding male-serving resources)</description>
+    </fields>
+
+    <!-- Race & Ethnicity -->
+    <fields>
+        <fullName>Is_BIPOC__c</fullName>
+        <label>BIPOC</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Identifies as Black, Indigenous, or Person of Color</description>
+    </fields>
+
+    <fields>
+        <fullName>Race_Ethnicity__c</fullName>
+        <label>Race/Ethnicity (Detailed)</label>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>black_african_american</fullName>
+                    <label>Black/African American</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>indigenous_native_american</fullName>
+                    <label>Indigenous/Native American</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>latinx_hispanic</fullName>
+                    <label>Latinx/Hispanic</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>asian</fullName>
+                    <label>Asian</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>pacific_islander</fullName>
+                    <label>Pacific Islander</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>middle_eastern_north_african</fullName>
+                    <label>Middle Eastern/North African</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>white_caucasian</fullName>
+                    <label>White/Caucasian</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>multiracial</fullName>
+                    <label>Multiracial</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>prefer_not_to_say</fullName>
+                    <label>Prefer not to say</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Detailed race/ethnicity (can select multiple)</description>
+    </fields>
+
+    <!-- Immigration Status -->
+    <fields>
+        <fullName>Is_Undocumented__c</fullName>
+        <label>Undocumented</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Undocumented immigration status (needs resources regardless of status)</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_U_Visa_Support__c</fullName>
+        <label>Needs U-Visa Support</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs legal assistance with U-Visa (for undocumented crime victims)</description>
+    </fields>
+
+    <!-- Disability -->
+    <fields>
+        <fullName>Is_Disabled__c</fullName>
+        <label>Disabled</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Has a disability requiring accommodations</description>
+    </fields>
+
+    <fields>
+        <fullName>Disability_Type__c</fullName>
+        <label>Disability Type</label>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>mobility</fullName>
+                    <label>Mobility/Physical</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>deaf_hard_of_hearing</fullName>
+                    <label>Deaf/Hard of Hearing</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>blind_low_vision</fullName>
+                    <label>Blind/Low Vision</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>cognitive</fullName>
+                    <label>Cognitive</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>mental_health</fullName>
+                    <label>Mental Health</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>chronic_illness</fullName>
+                    <label>Chronic Illness</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <label>Other</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Type of disability (can select multiple)</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_Deaf_HOH__c</fullName>
+        <label>Deaf/Hard of Hearing</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Deaf or hard of hearing (needs ASL interpreter or caption services)</description>
+    </fields>
+
+    <fields>
+        <fullName>Wheelchair_User__c</fullName>
+        <label>Wheelchair User</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Uses wheelchair (needs wheelchair-accessible facilities)</description>
+    </fields>
+
+    <!-- Age Group -->
+    <fields>
+        <fullName>Age_Group__c</fullName>
+        <label>Age Group</label>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>under_18</fullName>
+                    <label>Under 18 (Minor)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>18_24</fullName>
+                    <label>18-24 (Young Adult)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>25_49</fullName>
+                    <label>25-49 (Adult)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>50_64</fullName>
+                    <label>50-64 (Middle Age)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>65_plus</fullName>
+                    <label>65+ (Elderly)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>prefer_not_to_say</fullName>
+                    <label>Prefer not to say</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Age group for matching age-appropriate resources</description>
+    </fields>
+
+    <!-- Family Status -->
+    <fields>
+        <fullName>Has_Children__c</fullName>
+        <label>Has Children</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Has children who need shelter/services</description>
+    </fields>
+
+    <fields>
+        <fullName>Number_Of_Children__c</fullName>
+        <label>Number of Children</label>
+        <type>Number</type>
+        <precision>2</precision>
+        <scale>0</scale>
+        <description>Number of children</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_Pregnant__c</fullName>
+        <label>Pregnant</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Currently pregnant (may need prenatal care, reproductive health services)</description>
+    </fields>
+
+    <fields>
+        <fullName>Has_Pets__c</fullName>
+        <label>Has Pets</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Has pets (many survivors won't leave without pets)</description>
+    </fields>
+
+    <!-- Language -->
+    <fields>
+        <fullName>Primary_Language__c</fullName>
+        <label>Primary Language</label>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>english</fullName>
+                    <label>English</label>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>spanish</fullName>
+                    <label>Spanish</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>mandarin</fullName>
+                    <label>Mandarin</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>cantonese</fullName>
+                    <label>Cantonese</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>vietnamese</fullName>
+                    <label>Vietnamese</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>korean</fullName>
+                    <label>Korean</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>arabic</fullName>
+                    <label>Arabic</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>russian</fullName>
+                    <label>Russian</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>asl</fullName>
+                    <label>ASL (American Sign Language)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <label>Other</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Primary language spoken</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_Interpreter__c</fullName>
+        <label>Needs Interpreter</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs language interpreter services</description>
+    </fields>
+
+    <!-- Religious/Cultural -->
+    <fields>
+        <fullName>Religious_Preference__c</fullName>
+        <label>Religious Preference</label>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>no_preference</fullName>
+                    <label>No Preference</label>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>prefer_secular</fullName>
+                    <label>Prefer Secular/Non-religious</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>christian</fullName>
+                    <label>Christian</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>jewish</fullName>
+                    <label>Jewish</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>muslim</fullName>
+                    <label>Muslim</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>hindu</fullName>
+                    <label>Hindu</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>buddhist</fullName>
+                    <label>Buddhist</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <label>Other</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Religious preference for resource matching</description>
+    </fields>
+
+    <!-- Healthcare Needs -->
+    <fields>
+        <fullName>Needs_Reproductive_Healthcare__c</fullName>
+        <label>Needs Reproductive Healthcare</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs access to reproductive health services (abortion, birth control, etc.)</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_Mental_Health__c</fullName>
+        <label>Needs Mental Health Services</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs mental health counseling/therapy</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_Substance_Abuse_Treatment__c</fullName>
+        <label>Needs Substance Abuse Treatment</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs substance abuse treatment services</description>
+    </fields>
+
+    <!-- Economic Status -->
+    <fields>
+        <fullName>Currently_Employed__c</fullName>
+        <label>Currently Employed</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Currently employed</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_Financial_Assistance__c</fullName>
+        <label>Needs Financial Assistance</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs financial assistance resources</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_Employment_Support__c</fullName>
+        <label>Needs Employment Support</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs job training/placement services</description>
+    </fields>
+
+    <fields>
+        <fullName>Needs_Housing__c</fullName>
+        <label>Needs Housing</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs transitional or permanent housing</description>
+    </fields>
+
+    <!-- Legal Needs -->
+    <fields>
+        <fullName>Needs_Legal_Aid__c</fullName>
+        <label>Needs Legal Aid</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Needs legal assistance (restraining orders, custody, divorce, etc.)</description>
+    </fields>
+
+    <fields>
+        <fullName>Has_Restraining_Order__c</fullName>
+        <label>Has Restraining Order</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Currently has active restraining order</description>
+    </fields>
+
+    <!-- Timestamps -->
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When profile was created</description>
+    </fields>
+
+    <fields>
+        <fullName>Last_Modified_Timestamp__c</fullName>
+        <label>Last Modified Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>Last modification time</description>
+    </fields>
+
+    <!-- Sync Metadata -->
+    <fields>
+        <fullName>Last_Sync_Timestamp__c</fullName>
+        <label>Last Sync Timestamp</label>
+        <type>DateTime</type>
+        <description>Last time data was synced from mobile app</description>
+    </fields>
+</CustomObject>

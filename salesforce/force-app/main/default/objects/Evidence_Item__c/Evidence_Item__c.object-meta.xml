@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Evidence Item</label>
+    <pluralLabel>Evidence Items</pluralLabel>
+    <nameField>
+        <label>Evidence ID</label>
+        <type>AutoNumber</type>
+        <displayFormat>EV-{0000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>Private</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+
+    <description>Encrypted evidence files (photos, videos, audio recordings). All file paths and metadata are encrypted.</description>
+
+    <!-- User Relationship -->
+    <fields>
+        <fullName>User_ID__c</fullName>
+        <label>User ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <externalId>false</externalId>
+        <description>User who owns this evidence</description>
+    </fields>
+
+    <fields>
+        <fullName>SafeHaven_Profile__c</fullName>
+        <label>SafeHaven Profile</label>
+        <type>Lookup</type>
+        <referenceTo>SafeHaven_Profile__c</referenceTo>
+        <relationshipLabel>Evidence Items</relationshipLabel>
+        <relationshipName>Evidence_Items</relationshipName>
+        <description>Link to user profile</description>
+    </fields>
+
+    <!-- Evidence Type -->
+    <fields>
+        <fullName>Evidence_Type__c</fullName>
+        <label>Evidence Type</label>
+        <type>Picklist</type>
+        <required>true</required>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>photo</fullName>
+                    <label>Photo</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>video</fullName>
+                    <label>Video</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>audio</fullName>
+                    <label>Audio Recording</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Type of evidence file</description>
+    </fields>
+
+    <!-- Encrypted File Information -->
+    <fields>
+        <fullName>File_Path_Encrypted__c</fullName>
+        <label>File Path (Encrypted)</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <description>AES-256 encrypted file storage path (NEVER store plaintext)</description>
+    </fields>
+
+    <fields>
+        <fullName>Original_Filename_Encrypted__c</fullName>
+        <label>Original Filename (Encrypted)</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>AES-256 encrypted original filename</description>
+    </fields>
+
+    <!-- File Metadata -->
+    <fields>
+        <fullName>File_Size_Bytes__c</fullName>
+        <label>File Size (Bytes)</label>
+        <type>Number</type>
+        <precision>18</precision>
+        <scale>0</scale>
+        <description>File size in bytes</description>
+    </fields>
+
+    <fields>
+        <fullName>Duration_Seconds__c</fullName>
+        <label>Duration (Seconds)</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>2</scale>
+        <description>Duration for video/audio files in seconds</description>
+    </fields>
+
+    <fields>
+        <fullName>MIME_Type__c</fullName>
+        <label>MIME Type</label>
+        <type>Text</type>
+        <length>100</length>
+        <description>File MIME type (image/jpeg, video/mp4, audio/m4a, etc.)</description>
+    </fields>
+
+    <!-- Cryptographic Verification -->
+    <fields>
+        <fullName>SHA256_Hash__c</fullName>
+        <label>SHA-256 Hash</label>
+        <type>Text</type>
+        <length>64</length>
+        <required>true</required>
+        <unique>true</unique>
+        <externalId>true</externalId>
+        <description>SHA-256 hash of original file for integrity verification</description>
+    </fields>
+
+    <!-- Timestamps -->
+    <fields>
+        <fullName>Captured_Timestamp__c</fullName>
+        <label>Captured Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When evidence was captured</description>
+    </fields>
+
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When record was created in app</description>
+    </fields>
+
+    <!-- Location (Optional, GPS-enabled only) -->
+    <fields>
+        <fullName>Latitude__c</fullName>
+        <label>Latitude</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>7</scale>
+        <description>GPS latitude (only if user enabled GPS)</description>
+    </fields>
+
+    <fields>
+        <fullName>Longitude__c</fullName>
+        <label>Longitude</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>7</scale>
+        <description>GPS longitude (only if user enabled GPS)</description>
+    </fields>
+
+    <!-- Notes -->
+    <fields>
+        <fullName>Notes_Encrypted__c</fullName>
+        <label>Notes (Encrypted)</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+        <visibleLines>5</visibleLines>
+        <description>AES-256 encrypted user notes about this evidence</description>
+    </fields>
+
+    <!-- Sync Metadata -->
+    <fields>
+        <fullName>Synced_From_Device__c</fullName>
+        <label>Synced From Device</label>
+        <type>Checkbox</type>
+        <defaultValue>true</defaultValue>
+        <description>Whether this was synced from mobile app</description>
+    </fields>
+
+    <fields>
+        <fullName>Device_ID__c</fullName>
+        <label>Device ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Device identifier for sync tracking</description>
+    </fields>
+</CustomObject>

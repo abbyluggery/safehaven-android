@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>SafeHaven Profile</label>
+    <pluralLabel>SafeHaven Profiles</pluralLabel>
+    <nameField>
+        <label>Profile Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>Private</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+
+    <description>SafeHaven user profile with security settings. Stores encrypted password hashes and user preferences.</description>
+
+    <!-- User Identification -->
+    <fields>
+        <fullName>User_ID__c</fullName>
+        <label>User ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <unique>true</unique>
+        <externalId>true</externalId>
+        <description>Unique identifier for the user (matches Android app userId)</description>
+    </fields>
+
+    <!-- Security Fields -->
+    <fields>
+        <fullName>Password_Hash__c</fullName>
+        <label>Password Hash</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <description>SHA-256 hash of real password (never store plaintext)</description>
+    </fields>
+
+    <fields>
+        <fullName>Duress_Password_Hash__c</fullName>
+        <label>Duress Password Hash</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>SHA-256 hash of duress password for safety (shows fake data)</description>
+    </fields>
+
+    <!-- Privacy Settings -->
+    <fields>
+        <fullName>GPS_Enabled__c</fullName>
+        <label>GPS Enabled</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Include GPS location in incident reports (OFF by default for safety)</description>
+    </fields>
+
+    <fields>
+        <fullName>Stealth_Mode_Enabled__c</fullName>
+        <label>Stealth Mode Enabled</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Hide app from recent apps list</description>
+    </fields>
+
+    <fields>
+        <fullName>Auto_Delete_Enabled__c</fullName>
+        <label>Auto Delete Enabled</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Automatically delete data after X days</description>
+    </fields>
+
+    <fields>
+        <fullName>Auto_Delete_Days__c</fullName>
+        <label>Auto Delete Days</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <defaultValue>30</defaultValue>
+        <description>Number of days before auto-deletion (default 30)</description>
+    </fields>
+
+    <!-- Timestamps -->
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When profile was created</description>
+    </fields>
+
+    <fields>
+        <fullName>Last_Modified_Timestamp__c</fullName>
+        <label>Last Modified Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>Last modification time</description>
+    </fields>
+
+    <!-- Sync Metadata -->
+    <fields>
+        <fullName>Last_Sync_Timestamp__c</fullName>
+        <label>Last Sync Timestamp</label>
+        <type>DateTime</type>
+        <description>Last time data was synced from mobile app</description>
+    </fields>
+
+    <fields>
+        <fullName>Device_ID__c</fullName>
+        <label>Device ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Device identifier for sync tracking</description>
+    </fields>
+</CustomObject>

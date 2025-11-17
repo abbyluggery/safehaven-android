@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Verified Document</label>
+    <pluralLabel>Verified Documents</pluralLabel>
+    <nameField>
+        <label>Document ID</label>
+        <type>AutoNumber</type>
+        <displayFormat>DOC-{0000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>Private</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+
+    <description>Cryptographically verified documents (IDs, passports, birth certificates). For survivors whose abuser controls original documents.</description>
+
+    <!-- User Relationship -->
+    <fields>
+        <fullName>User_ID__c</fullName>
+        <label>User ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <externalId>false</externalId>
+        <description>User who owns this document</description>
+    </fields>
+
+    <fields>
+        <fullName>SafeHaven_Profile__c</fullName>
+        <label>SafeHaven Profile</label>
+        <type>Lookup</type>
+        <referenceTo>SafeHaven_Profile__c</referenceTo>
+        <relationshipLabel>Verified Documents</relationshipLabel>
+        <relationshipName>Verified_Documents</relationshipName>
+        <description>Link to user profile</description>
+    </fields>
+
+    <!-- Document Type -->
+    <fields>
+        <fullName>Document_Type__c</fullName>
+        <label>Document Type</label>
+        <type>Picklist</type>
+        <required>true</required>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>passport</fullName>
+                    <label>Passport</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>drivers_license</fullName>
+                    <label>Driver's License</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>state_id</fullName>
+                    <label>State ID</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>birth_certificate</fullName>
+                    <label>Birth Certificate</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>social_security_card</fullName>
+                    <label>Social Security Card</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>marriage_certificate</fullName>
+                    <label>Marriage Certificate</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>divorce_decree</fullName>
+                    <label>Divorce Decree</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>restraining_order</fullName>
+                    <label>Restraining Order</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>medical_records</fullName>
+                    <label>Medical Records</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>bank_statement</fullName>
+                    <label>Bank Statement</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>lease_agreement</fullName>
+                    <label>Lease Agreement</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <label>Other</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Type of legal document</description>
+    </fields>
+
+    <!-- Document Information -->
+    <fields>
+        <fullName>Document_Name__c</fullName>
+        <label>Document Name</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <description>User-friendly name for this document</description>
+    </fields>
+
+    <!-- Cryptographic Verification -->
+    <fields>
+        <fullName>SHA256_Hash__c</fullName>
+        <label>SHA-256 Hash</label>
+        <type>Text</type>
+        <length>64</length>
+        <required>true</required>
+        <unique>true</unique>
+        <externalId>true</externalId>
+        <description>SHA-256 hash of document image for authenticity verification</description>
+    </fields>
+
+    <fields>
+        <fullName>Blockchain_Transaction_ID__c</fullName>
+        <label>Blockchain Transaction ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Blockchain transaction ID for immutable timestamp proof (future enhancement)</description>
+    </fields>
+
+    <fields>
+        <fullName>Verification_Timestamp__c</fullName>
+        <label>Verification Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When document was cryptographically verified</description>
+    </fields>
+
+    <!-- Encrypted Storage -->
+    <fields>
+        <fullName>Image_Path_Encrypted__c</fullName>
+        <label>Image Path (Encrypted)</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <description>AES-256 encrypted path to document image</description>
+    </fields>
+
+    <fields>
+        <fullName>PDF_Path_Encrypted__c</fullName>
+        <label>PDF Path (Encrypted)</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>AES-256 encrypted path to generated verification PDF</description>
+    </fields>
+
+    <!-- File Metadata -->
+    <fields>
+        <fullName>File_Size_Bytes__c</fullName>
+        <label>File Size (Bytes)</label>
+        <type>Number</type>
+        <precision>18</precision>
+        <scale>0</scale>
+        <description>Original image file size in bytes</description>
+    </fields>
+
+    <fields>
+        <fullName>Image_Width__c</fullName>
+        <label>Image Width</label>
+        <type>Number</type>
+        <precision>5</precision>
+        <scale>0</scale>
+        <description>Image width in pixels</description>
+    </fields>
+
+    <fields>
+        <fullName>Image_Height__c</fullName>
+        <label>Image Height</label>
+        <type>Number</type>
+        <precision>5</precision>
+        <scale>0</scale>
+        <description>Image height in pixels</description>
+    </fields>
+
+    <!-- Verification Details -->
+    <fields>
+        <fullName>Verification_Method__c</fullName>
+        <label>Verification Method</label>
+        <type>Picklist</type>
+        <required>true</required>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>sha256_only</fullName>
+                    <label>SHA-256 Hash Only</label>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>sha256_blockchain</fullName>
+                    <label>SHA-256 + Blockchain Timestamp</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Cryptographic verification method used</description>
+    </fields>
+
+    <fields>
+        <fullName>Notes_Encrypted__c</fullName>
+        <label>Notes (Encrypted)</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+        <visibleLines>5</visibleLines>
+        <description>AES-256 encrypted user notes about this document</description>
+    </fields>
+
+    <!-- Timestamps -->
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When record was created in app</description>
+    </fields>
+
+    <!-- Sync Metadata -->
+    <fields>
+        <fullName>Synced_From_Device__c</fullName>
+        <label>Synced From Device</label>
+        <type>Checkbox</type>
+        <defaultValue>true</defaultValue>
+        <description>Whether this was synced from mobile app</description>
+    </fields>
+
+    <fields>
+        <fullName>Device_ID__c</fullName>
+        <label>Device ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Device identifier for sync tracking</description>
+    </fields>
+</CustomObject>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Incident Report</label>
+    <pluralLabel>Incident Reports</pluralLabel>
+    <nameField>
+        <label>Report Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>IR-{0000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>Private</sharingModel>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+
+    <description>Legal-formatted documentation of domestic violence incidents. All sensitive fields are encrypted.</description>
+
+    <!-- User Relationship -->
+    <fields>
+        <fullName>User_ID__c</fullName>
+        <label>User ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <externalId>false</externalId>
+        <description>User who created this report</description>
+    </fields>
+
+    <fields>
+        <fullName>SafeHaven_Profile__c</fullName>
+        <label>SafeHaven Profile</label>
+        <type>Lookup</type>
+        <referenceTo>SafeHaven_Profile__c</referenceTo>
+        <relationshipLabel>Incident Reports</relationshipLabel>
+        <relationshipName>Incident_Reports</relationshipName>
+        <description>Link to user profile</description>
+    </fields>
+
+    <!-- Incident Details -->
+    <fields>
+        <fullName>Incident_Type__c</fullName>
+        <label>Incident Type</label>
+        <type>Picklist</type>
+        <required>true</required>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>physical</fullName>
+                    <label>Physical Abuse</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>verbal</fullName>
+                    <label>Verbal/Emotional Abuse</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>financial</fullName>
+                    <label>Financial Abuse</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>sexual</fullName>
+                    <label>Sexual Abuse</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>stalking</fullName>
+                    <label>Stalking/Harassment</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <label>Other</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Type of abuse incident</description>
+    </fields>
+
+    <fields>
+        <fullName>Incident_Timestamp__c</fullName>
+        <label>Incident Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When the incident occurred</description>
+    </fields>
+
+    <!-- Encrypted Sensitive Fields -->
+    <fields>
+        <fullName>Description_Encrypted__c</fullName>
+        <label>Description (Encrypted)</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+        <visibleLines>10</visibleLines>
+        <description>AES-256 encrypted description of incident (NEVER store plaintext)</description>
+    </fields>
+
+    <fields>
+        <fullName>Witnesses_Encrypted__c</fullName>
+        <label>Witnesses (Encrypted)</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+        <visibleLines>5</visibleLines>
+        <description>AES-256 encrypted witness information</description>
+    </fields>
+
+    <fields>
+        <fullName>Injuries_Encrypted__c</fullName>
+        <label>Injuries (Encrypted)</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+        <visibleLines>5</visibleLines>
+        <description>AES-256 encrypted injury descriptions</description>
+    </fields>
+
+    <!-- Police & Medical -->
+    <fields>
+        <fullName>Police_Involved__c</fullName>
+        <label>Police Involved</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Whether police were involved</description>
+    </fields>
+
+    <fields>
+        <fullName>Police_Report_Number__c</fullName>
+        <label>Police Report Number</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Official police report number if applicable</description>
+    </fields>
+
+    <fields>
+        <fullName>Medical_Attention__c</fullName>
+        <label>Medical Attention</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Whether medical attention was sought</description>
+    </fields>
+
+    <!-- Location (Optional) -->
+    <fields>
+        <fullName>Location_Text__c</fullName>
+        <label>Location</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Location description (not encrypted)</description>
+    </fields>
+
+    <fields>
+        <fullName>Latitude__c</fullName>
+        <label>Latitude</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>7</scale>
+        <description>GPS latitude (only if user enabled GPS)</description>
+    </fields>
+
+    <fields>
+        <fullName>Longitude__c</fullName>
+        <label>Longitude</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>7</scale>
+        <description>GPS longitude (only if user enabled GPS)</description>
+    </fields>
+
+    <!-- Perpetrator Info -->
+    <fields>
+        <fullName>Perpetrator_Name__c</fullName>
+        <label>Perpetrator Name</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Name of perpetrator (optional)</description>
+    </fields>
+
+    <fields>
+        <fullName>Perpetrator_Relationship__c</fullName>
+        <label>Perpetrator Relationship</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Relationship to perpetrator</description>
+    </fields>
+
+    <!-- Metadata -->
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When report was created in app</description>
+    </fields>
+
+    <fields>
+        <fullName>Last_Modified_Timestamp__c</fullName>
+        <label>Last Modified Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>Last modification time</description>
+    </fields>
+
+    <fields>
+        <fullName>Synced_From_Device__c</fullName>
+        <label>Synced From Device</label>
+        <type>Checkbox</type>
+        <defaultValue>true</defaultValue>
+        <description>Whether this was synced from mobile app</description>
+    </fields>
+</CustomObject>

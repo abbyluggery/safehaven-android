@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Legal Resource</label>
+    <pluralLabel>Legal Resources</pluralLabel>
+    <nameField>
+        <label>Resource Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+
+    <description>Database of 510+ legal resources for domestic violence survivors. Supports intersectional matching across 48+ identity categories.</description>
+
+    <!-- Resource Type -->
+    <fields>
+        <fullName>Resource_Type__c</fullName>
+        <label>Resource Type</label>
+        <type>Picklist</type>
+        <required>true</required>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>shelter</fullName>
+                    <label>Emergency Shelter</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>legal_aid</fullName>
+                    <label>Legal Aid</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>hotline</fullName>
+                    <label>Crisis Hotline</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>counseling</fullName>
+                    <label>Counseling/Therapy</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>healthcare</fullName>
+                    <label>Healthcare</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>housing</fullName>
+                    <label>Transitional Housing</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>financial</fullName>
+                    <label>Financial Assistance</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>employment</fullName>
+                    <label>Employment Support</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Primary type of resource</description>
+    </fields>
+
+    <!-- Contact Information -->
+    <fields>
+        <fullName>Organization_Name__c</fullName>
+        <label>Organization Name</label>
+        <type>Text</type>
+        <length>255</length>
+        <required>true</required>
+        <description>Name of organization providing service</description>
+    </fields>
+
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <label>Phone Number</label>
+        <type>Phone</type>
+        <description>Primary contact phone number</description>
+    </fields>
+
+    <fields>
+        <fullName>Hotline_Number__c</fullName>
+        <label>Hotline Number</label>
+        <type>Phone</type>
+        <description>24/7 crisis hotline number (if applicable)</description>
+    </fields>
+
+    <fields>
+        <fullName>Website__c</fullName>
+        <label>Website</label>
+        <type>Url</type>
+        <description>Organization website</description>
+    </fields>
+
+    <fields>
+        <fullName>Email__c</fullName>
+        <label>Email</label>
+        <type>Email</type>
+        <description>Contact email address</description>
+    </fields>
+
+    <!-- Location -->
+    <fields>
+        <fullName>Street_Address__c</fullName>
+        <label>Street Address</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Physical address (may be confidential for shelters)</description>
+    </fields>
+
+    <fields>
+        <fullName>City__c</fullName>
+        <label>City</label>
+        <type>Text</type>
+        <length>100</length>
+        <required>true</required>
+        <description>City location</description>
+    </fields>
+
+    <fields>
+        <fullName>State__c</fullName>
+        <label>State</label>
+        <type>Text</type>
+        <length>2</length>
+        <required>true</required>
+        <description>Two-letter state code (e.g., CA, NY, TX)</description>
+    </fields>
+
+    <fields>
+        <fullName>Zip_Code__c</fullName>
+        <label>Zip Code</label>
+        <type>Text</type>
+        <length>10</length>
+        <description>Zip code</description>
+    </fields>
+
+    <fields>
+        <fullName>Latitude__c</fullName>
+        <label>Latitude</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>7</scale>
+        <required>true</required>
+        <description>GPS latitude for distance calculations</description>
+    </fields>
+
+    <fields>
+        <fullName>Longitude__c</fullName>
+        <label>Longitude</label>
+        <type>Number</type>
+        <precision>10</precision>
+        <scale>7</scale>
+        <required>true</required>
+        <description>GPS longitude for distance calculations</description>
+    </fields>
+
+    <!-- Operating Information -->
+    <fields>
+        <fullName>Hours_Of_Operation__c</fullName>
+        <label>Hours of Operation</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Operating hours (e.g., "24/7", "Mon-Fri 9am-5pm")</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_24_7__c</fullName>
+        <label>24/7 Service</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Operates 24 hours a day, 7 days a week</description>
+    </fields>
+
+    <fields>
+        <fullName>Is_Free__c</fullName>
+        <label>Free Service</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Service is free of charge</description>
+    </fields>
+
+    <fields>
+        <fullName>Languages_Spoken__c</fullName>
+        <label>Languages Spoken</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Languages available (comma-separated: English, Spanish, ASL, etc.)</description>
+    </fields>
+
+    <!-- Intersectional Support Categories -->
+    <fields>
+        <fullName>Serves_LGBTQIA__c</fullName>
+        <label>Serves LGBTQIA+</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Explicitly LGBTQIA+-affirming services</description>
+    </fields>
+
+    <fields>
+        <fullName>Serves_Trans__c</fullName>
+        <label>Serves Transgender</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Trans-inclusive shelter/services</description>
+    </fields>
+
+    <fields>
+        <fullName>Serves_Nonbinary__c</fullName>
+        <label>Serves Non-binary</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Non-binary inclusive services</description>
+    </fields>
+
+    <fields>
+        <fullName>Serves_Men__c</fullName>
+        <label>Serves Men</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Serves male-identifying survivors</description>
+    </fields>
+
+    <fields>
+        <fullName>BIPOC_Led__c</fullName>
+        <label>BIPOC-Led Organization</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Organization led by BIPOC community members</description>
+    </fields>
+
+    <fields>
+        <fullName>Serves_Undocumented__c</fullName>
+        <label>Serves Undocumented</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Services available regardless of immigration status</description>
+    </fields>
+
+    <fields>
+        <fullName>U_Visa_Support__c</fullName>
+        <label>U-Visa Support</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Provides U-Visa legal assistance for undocumented survivors</description>
+    </fields>
+
+    <fields>
+        <fullName>Wheelchair_Accessible__c</fullName>
+        <label>Wheelchair Accessible</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Facility is wheelchair accessible</description>
+    </fields>
+
+    <fields>
+        <fullName>ASL_Interpreter__c</fullName>
+        <label>ASL Interpreter Available</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>American Sign Language interpreter services available</description>
+    </fields>
+
+    <fields>
+        <fullName>Serves_Elderly__c</fullName>
+        <label>Serves Elderly</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Specialized services for elderly survivors (65+)</description>
+    </fields>
+
+    <fields>
+        <fullName>Serves_Youth__c</fullName>
+        <label>Serves Youth</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Services for young survivors (under 25)</description>
+    </fields>
+
+    <fields>
+        <fullName>Pets_Allowed__c</fullName>
+        <label>Pets Allowed</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Shelter accepts pets (many survivors won't leave without pets)</description>
+    </fields>
+
+    <fields>
+        <fullName>Children_Allowed__c</fullName>
+        <label>Children Allowed</label>
+        <type>Checkbox</type>
+        <defaultValue>true</defaultValue>
+        <description>Accepts survivors with children</description>
+    </fields>
+
+    <!-- Religious/Cultural -->
+    <fields>
+        <fullName>Religious_Affiliation__c</fullName>
+        <label>Religious Affiliation</label>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>secular</fullName>
+                    <label>Secular/Non-religious</label>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>christian</fullName>
+                    <label>Christian</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>jewish</fullName>
+                    <label>Jewish</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>muslim</fullName>
+                    <label>Muslim</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>interfaith</fullName>
+                    <label>Interfaith</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Religious affiliation of organization (if any)</description>
+    </fields>
+
+    <!-- Healthcare Specific -->
+    <fields>
+        <fullName>Reproductive_Healthcare__c</fullName>
+        <label>Reproductive Healthcare</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Provides reproductive health services (abortion, birth control, Plan B)</description>
+    </fields>
+
+    <fields>
+        <fullName>STI_Testing__c</fullName>
+        <label>STI Testing</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Provides STI/STD testing and treatment</description>
+    </fields>
+
+    <fields>
+        <fullName>SANE_Exam__c</fullName>
+        <label>SANE Exam Available</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Sexual Assault Nurse Examiner available for forensic exams</description>
+    </fields>
+
+    <!-- Description -->
+    <fields>
+        <fullName>Description__c</fullName>
+        <label>Description</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+        <visibleLines>5</visibleLines>
+        <description>Detailed description of services provided</description>
+    </fields>
+
+    <!-- Verification -->
+    <fields>
+        <fullName>Verified__c</fullName>
+        <label>Verified</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Resource has been verified as active and accurate</description>
+    </fields>
+
+    <fields>
+        <fullName>Last_Verified_Date__c</fullName>
+        <label>Last Verified Date</label>
+        <type>Date</type>
+        <description>Date resource information was last verified</description>
+    </fields>
+
+    <!-- Metadata -->
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When resource was added to database</description>
+    </fields>
+
+    <fields>
+        <fullName>Last_Modified_Timestamp__c</fullName>
+        <label>Last Modified Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>Last modification time</description>
+    </fields>
+
+    <!-- Data Source -->
+    <fields>
+        <fullName>Data_Source__c</fullName>
+        <label>Data Source</label>
+        <type>Text</type>
+        <length>255</length>
+        <description>Source of resource data (CSV import, manual entry, API, etc.)</description>
+    </fields>
+
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <label>External ID</label>
+        <type>Text</type>
+        <length>255</length>
+        <unique>true</unique>
+        <externalId>true</externalId>
+        <description>External identifier for deduplication during imports</description>
+    </fields>
+</CustomObject>
