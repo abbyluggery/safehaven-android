@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 - SafeHaven Purple Theme -->
+    <color name="purple_primary">#6B4EE6</color>
+    <color name="purple_secondary">#9C89F5</color>
+    <color name="purple_tertiary">#7D5260</color>
+
+    <!-- Semantic colors -->
+    <color name="safe_green">#4CAF50</color>
+    <color name="danger_red">#F44336</color>
+    <color name="warning_orange">#FF9800</color>
+
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

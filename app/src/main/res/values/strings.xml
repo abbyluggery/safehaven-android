@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeHaven</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to SafeHaven</string>
+    <string name="welcome_description">A safe, encrypted space for survivors of domestic violence</string>
+
+    <!-- Security -->
+    <string name="set_password">Set Your SafeHaven Password</string>
+    <string name="set_duress_password">Set Duress Password (Optional)</string>
+    <string name="duress_explanation">A duress password shows fake data if you\'re forced to open the app</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_incidents">Incidents</string>
+    <string name="nav_evidence">Evidence</string>
+    <string name="nav_resources">Resources</string>
+    <string name="nav_documents">Documents</string>
+    <string name="nav_safety">Safety Plan</string>
+
+    <!-- Features -->
+    <string name="silent_camera">Silent Camera</string>
+    <string name="document_verification">Verify Document</string>
+    <string name="incident_report">New Incident Report</string>
+    <string name="find_resources">Find Resources</string>
+
+    <!-- Panic -->
+    <string name="panic_title">Emergency Delete</string>
+    <string name="panic_message">Delete all SafeHaven data? This cannot be undone.</string>
+    <string name="panic_confirm">DELETE ALL</string>
+    <string name="panic_cancel">Cancel</string>
+
+    <!-- Resources -->
+    <string name="resource_filter">Filter Resources</string>
+    <string name="resource_call">Call</string>
+    <string name="resource_directions">Directions</string>
+
+    <!-- Evidence -->
+    <string name="evidence_photo">Photo</string>
+    <string name="evidence_video">Video</string>
+    <string name="evidence_audio">Audio</string>
+    <string name="capture_evidence">Capture Evidence</string>
+
+    <!-- Errors -->
+    <string name="error_camera">Camera unavailable</string>
+    <string name="error_encryption">Encryption failed</string>
+    <string name="error_network">Network unavailable</string>
+</resources>
