@@ -94,7 +94,9 @@ fun SafeHavenNavGraph(
                 onNavigateToResources = { navController.navigate(Screen.ResourceFinder.route) },
                 onNavigateToSafetyPlan = { navController.navigate(Screen.SafetyPlan.route) },
                 onNavigateToSettings = { navController.navigate(Screen.Settings.route) },
-                onNavigateToHealthcare = { navController.navigate(Screen.HealthcareResourceFinder.route) }
+                onNavigateToHealthcare = { navController.navigate(Screen.HealthcareResourceFinder.route) },
+                onNavigateToAbuseResources = { navController.navigate(Screen.AbuseResources.route) },
+                onNavigateToEmergencyContacts = { navController.navigate(Screen.EmergencyContacts.route) }
             )
         }
 

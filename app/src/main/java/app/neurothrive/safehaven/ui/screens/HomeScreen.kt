@@ -13,7 +13,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import app.neurothrive.safehaven.data.session.UserSession
 import app.neurothrive.safehaven.ui.components.FeatureCard
+import app.neurothrive.safehaven.ui.components.SOSPanicButton
 import app.neurothrive.safehaven.ui.viewmodels.HomeViewModel
+import app.neurothrive.safehaven.ui.viewmodels.SOSViewModel
 
 /**
  * Home Screen - Main Dashboard
@@ -23,6 +25,7 @@ import app.neurothrive.safehaven.ui.viewmodels.HomeViewModel
 @Composable
 fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel(),
+    sosViewModel: SOSViewModel = hiltViewModel(),
     userSession: UserSession = hiltViewModel(),
     onNavigateToCamera: () -> Unit,
     onNavigateToIncidents: () -> Unit,
@@ -31,16 +34,22 @@ fun HomeScreen(
     onNavigateToResources: () -> Unit,
     onNavigateToSafetyPlan: () -> Unit,
     onNavigateToSettings: () -> Unit,
-    onNavigateToHealthcare: () -> Unit = {}
+    onNavigateToHealthcare: () -> Unit = {},
+    onNavigateToAbuseResources: () -> Unit = {},
+    onNavigateToEmergencyContacts: () -> Unit = {}
 ) {
     // Collect state from ViewModel
     val stats by viewModel.stats.collectAsState()
     val currentUserId by userSession.currentUserId.collectAsState(initial = null)
 
+    // Collect SOS state
+    val isSOSActive by sosViewModel.isSOSActive.collectAsState()
+
     // Load dashboard when screen launches
     LaunchedEffect(currentUserId) {
         currentUserId?.let { userId ->
             viewModel.loadDashboard(userId)
+            sosViewModel.loadActiveSession(userId)
         }
     }
 
@@ -113,6 +122,51 @@ fun HomeScreen(
                                 color = MaterialTheme.colorScheme.onPrimaryContainer
                             )
                         }
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            // SOS Panic Button Section
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.3f)
+                )
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Text(
+                        text = "Emergency SOS",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.error
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    currentUserId?.let { userId ->
+                        SOSPanicButton(
+                            isActive = isSOSActive,
+                            onActivate = {
+                                sosViewModel.activateSOS(userId, includeLocation = true)
+                            },
+                            onDeactivate = {
+                                sosViewModel.deactivateSOS(userId, sendAllClear = true)
+                            }
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    OutlinedButton(
+                        onClick = onNavigateToEmergencyContacts,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(Icons.Default.Contacts, contentDescription = null)
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("Manage Emergency Contacts")
                     }
                 }
             }
@@ -248,6 +302,22 @@ fun HomeScreen(
                     )
                 },
                 onClick = onNavigateToHealthcare
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            FeatureCard(
+                title = "Learn About Abuse",
+                description = "Educational resources on recognizing and documenting abuse",
+                icon = {
+                    Icon(
+                        Icons.Default.School,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(40.dp)
+                    )
+                },
+                onClick = onNavigateToAbuseResources
             )
         }
     }
