@@ -4,9 +4,9 @@
 
 This CSV file contains domestic violence resources with **full intersectional support** (58 filter categories!) to ensure ALL survivors can find help - including those with dependents, from often-excluded populations, facing transportation barriers, AND needing reproductive healthcare access.
 
-**Current Count**: 440 high-quality resources (up from 410!)
+**Current Count**: 510 high-quality resources (up from 410!)
 **Filter Categories**: 58 (up from 48!) - now includes REPRODUCTIVE HEALTHCARE SAFETY (critical post-Roe)!
-**NEW RESOURCES**: 30 reproductive healthcare resources including clinics, recovery housing, childcare, financial assistance, and accompaniment services
+**HEALTHCARE RESOURCES**: 100 comprehensive reproductive healthcare resources including clinics, recovery housing, childcare, financial assistance, and accompaniment services across the nation
 
 ## Resource Types
 
@@ -24,30 +24,41 @@ This CSV file contains domestic violence resources with **full intersectional su
   - RSO/PPO (Permanent Protective Order) forms
   - Emergency custody forms
   - Free, downloadable, state-specific forms for survivors who can't afford lawyers
-- **reproductive_healthcare**: **CRITICAL POST-ROE!** Reproductive healthcare clinics (~10 resources)
-  - Clinics in accessible states (CA, NY, IL, WA, OR, CO, NM, MD, MN)
+- **reproductive_healthcare**: **CRITICAL POST-ROE!** Reproductive healthcare clinics (50 resources)
+  - Clinics across protective states (CA, NY, MA, PA, IL, WA, OR, CO, NM, MD, MN, MI, WI, NV, AZ, HI, AK, MT, and more)
   - Accept out-of-state patients
-  - Provide comprehensive reproductive healthcare services
-  - **WHY THIS MATTERS**: DV escalates dramatically with unwanted pregnancy
-- **recovery_housing**: Post-procedure recovery housing (~5 resources)
-  - Safe, confidential housing during recovery period
-  - 1-5 day stays available
+  - Provide comprehensive reproductive healthcare services including options counseling, medication, procedures, and post-procedure care
+  - Multi-lingual support in many locations
+  - **WHY THIS MATTERS**: DV escalates dramatically with unwanted pregnancy - access to reproductive healthcare is a safety issue
+- **recovery_housing**: Post-procedure recovery housing (20 resources)
+  - Safe, confidential housing during recovery period across the nation
+  - 1-5 day stays available depending on location
   - Meals, transportation, emotional support included
-- **childcare**: Childcare for survivors accessing healthcare (~5 resources)
-  - Childcare during medical appointments
+  - LGBTQ+-inclusive facilities available
+  - Specialized support for high-altitude, desert, and other climate considerations
+- **childcare**: Childcare for survivors accessing healthcare (20 resources)
+  - Childcare during medical appointments nationwide
   - Childcare during recovery period
-  - Emergency and overnight care available
+  - Emergency and overnight care available at many locations
+  - 24/7 availability at select facilities
+  - Multi-lingual support (English, Spanish, Chinese, Arabic, Somali, Hmong, Portuguese, and more)
   - **CRITICAL**: Most survivors have children and need care during appointments
-- **financial_assistance**: Abortion funds and financial support (~5 resources)
-  - Procedure funding assistance
+- **financial_assistance**: Abortion funds and financial support (18 resources)
+  - State-based abortion funds covering procedure costs
+  - National hotlines for immediate assistance
   - Travel cost coverage
   - Lodging assistance
   - Childcare funding
-- **accompaniment**: Travel and clinic accompaniment services (~5 resources)
+  - Emergency rapid-response funding available
+  - Covers survivors traveling from restricted states
+- **accompaniment**: Travel and clinic accompaniment services (12 resources)
   - Volunteer accompaniment for safety during travel
-  - Clinic escort services
-  - Emotional support throughout journey
-  - Practical logistics assistance
+  - Clinic escort services to ensure safe passage
+  - Emotional support throughout complete journey
+  - Practical logistics assistance (coordination, planning)
+  - Doula services with cultural competency
+  - 24/7 on-call availability at most locations
+  - LGBTQ+-affirming and culturally sensitive support
 
 ## Geographic Coverage
 
