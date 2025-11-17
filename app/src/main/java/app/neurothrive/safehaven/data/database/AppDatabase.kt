@@ -13,6 +13,7 @@ import app.neurothrive.safehaven.data.database.entities.*
  * - No cloud backup by default
  * - Supports secure deletion (cascade)
  * - Healthcare journeys have additional privacy protections
+ * - SOS sessions track emergency activations for evidence
  *
  * Entities:
  * 1. SafeHavenProfile - User settings + identity
@@ -21,7 +22,10 @@ import app.neurothrive.safehaven.data.database.entities.*
  * 4. EvidenceItem - Encrypted photos/videos/audio
  * 5. LegalResource - Intersectional resource database (58 categories - includes healthcare)
  * 6. SurvivorProfile - Extended demographic data
- * 7. HealthcareJourney - Reproductive healthcare travel coordination (NEW)
+ * 7. HealthcareJourney - Reproductive healthcare travel coordination
+ * 8. EmergencyContact - Trusted contacts for SOS alerts (NEW)
+ * 9. SOSSession - SOS panic button activation tracking (NEW)
+ * 10. SOSLocationUpdate - GPS breadcrumbs during SOS (NEW)
  */
 @Database(
     entities = [
@@ -31,9 +35,12 @@ import app.neurothrive.safehaven.data.database.entities.*
         EvidenceItem::class,
         LegalResource::class,
         SurvivorProfile::class,
-        HealthcareJourney::class
+        HealthcareJourney::class,
+        EmergencyContact::class,
+        SOSSession::class,
+        SOSLocationUpdate::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -46,6 +53,8 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun legalResourceDao(): LegalResourceDao
     abstract fun survivorProfileDao(): SurvivorProfileDao
     abstract fun healthcareJourneyDao(): HealthcareJourneyDao
+    abstract fun emergencyContactDao(): EmergencyContactDao
+    abstract fun sosSessionDao(): SOSSessionDao
 
     companion object {
         const val DATABASE_NAME = "safehaven_db"
