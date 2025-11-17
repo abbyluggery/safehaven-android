@@ -10,8 +10,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import app.neurothrive.safehaven.data.session.UserSession
+import app.neurothrive.safehaven.ui.viewmodels.LoginViewModel
 
 /**
  * Login Screen
@@ -23,12 +25,41 @@ import androidx.compose.ui.unit.dp
  */
 @Composable
 fun LoginScreen(
+    viewModel: LoginViewModel = hiltViewModel(),
+    userSession: UserSession = hiltViewModel(),
     onLoginSuccess: () -> Unit
 ) {
+    var userId by remember { mutableStateOf("default_user") } // TODO: Support multiple users
     var password by remember { mutableStateOf("") }
     var passwordVisible by remember { mutableStateOf(false) }
-    var isLoading by remember { mutableStateOf(false) }
-    var errorMessage by remember { mutableStateOf<String?>(null) }
+
+    // Collect state from ViewModel
+    val uiState by viewModel.uiState.collectAsState()
+    val authResult by viewModel.authResult.collectAsState()
+
+    // Handle authentication result
+    LaunchedEffect(authResult) {
+        when (val result = authResult) {
+            is LoginViewModel.AuthResult.Success -> {
+                // Set current user in session
+                userSession.setCurrentUser(result.userId, result.isDuress)
+
+                if (result.isDuress) {
+                    // TODO: Show decoy/empty data mode
+                    // Could show a subtle indicator or just navigate normally
+                }
+
+                onLoginSuccess()
+                viewModel.resetAuthResult()
+            }
+            is LoginViewModel.AuthResult.Failure -> {
+                // Error already shown in UI via uiState.error
+            }
+            null -> {
+                // No result yet
+            }
+        }
+    }
 
     Scaffold { padding ->
         Column(
@@ -53,7 +84,6 @@ fun LoginScreen(
                 value = password,
                 onValueChange = {
                     password = it
-                    errorMessage = null
                 },
                 label = { Text("Password") },
                 singleLine = true,
@@ -76,16 +106,33 @@ fun LoginScreen(
                     }
                 },
                 modifier = Modifier.fillMaxWidth(),
-                isError = errorMessage != null
+                isError = uiState.error != null
             )
 
-            if (errorMessage != null) {
+            if (uiState.error != null) {
                 Text(
-                    text = errorMessage!!,
+                    text = uiState.error!!,
                     color = MaterialTheme.colorScheme.error,
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.padding(top = 4.dp)
                 )
+            }
+
+            // Account locked warning
+            if (uiState.isLocked) {
+                Spacer(modifier = Modifier.height(8.dp))
+                Card(
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.errorContainer
+                    )
+                ) {
+                    Text(
+                        text = "🔒 Too many failed attempts. Account locked temporarily.",
+                        color = MaterialTheme.colorScheme.onErrorContainer,
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier.padding(12.dp)
+                    )
+                }
             }
 
             Spacer(modifier = Modifier.height(24.dp))
@@ -93,20 +140,16 @@ fun LoginScreen(
             // Login Button
             Button(
                 onClick = {
-                    if (password.isBlank()) {
-                        errorMessage = "Please enter your password"
-                    } else {
-                        isLoading = true
-                        // TODO: Implement actual authentication
-                        onLoginSuccess()
+                    if (password.isNotBlank()) {
+                        viewModel.login(userId, password)
                     }
                 },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(56.dp),
-                enabled = !isLoading
+                enabled = !uiState.isAuthenticating && !uiState.isLocked && password.isNotBlank()
             ) {
-                if (isLoading) {
+                if (uiState.isAuthenticating) {
                     CircularProgressIndicator(
                         modifier = Modifier.size(24.dp),
                         color = MaterialTheme.colorScheme.onPrimary
@@ -140,6 +183,16 @@ fun LoginScreen(
                         color = MaterialTheme.colorScheme.onSecondaryContainer
                     )
                 }
+            }
+
+            // Failed attempts indicator
+            if (uiState.failedAttempts > 0 && !uiState.isLocked) {
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = "Failed attempts: ${uiState.failedAttempts}/5",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.error
+                )
             }
         }
     }
