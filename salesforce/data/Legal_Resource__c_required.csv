@@ -1,0 +1,511 @@
+Name,Organization_Name__c,Resource_Type__c,City__c,State__c,Latitude__c,Longitude__c,Created_Timestamp__c,Last_Modified_Timestamp__c
+Rainbow House LGBTQ+ Shelter,Rainbow House LGBTQ+ Shelter,shelter,San Francisco,CA,37.7749,-122.4194,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Transgender Law Center,Transgender Law Center,legal_aid,Oakland,CA,37.8044,-122.2712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+National Domestic Violence Hotline,National Domestic Violence Hotline,hotline,Austin,TX,30.2672,-97.7431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Casa de Esperanza,Casa de Esperanza,shelter,St. Paul,MN,44.9537,-93.0900,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Men's Safe Haven,Men's Safe Haven,shelter,Portland,OR,45.5152,-122.6784,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Undocumented Survivors Legal Aid,Undocumented Survivors Legal Aid,legal_aid,Los Angeles,CA,34.0522,-118.2437,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Black Women's Blueprint,Black Women's Blueprint,counseling,New York,NY,40.8075,-73.9533,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Deaf Hope,Deaf Hope,shelter,Oakland,CA,37.8044,-122.2712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+FORGE Trans Hotline,FORGE Trans Hotline,hotline,Milwaukee,WI,43.0389,-87.9065,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Horizon,Safe Horizon,shelter,New York,NY,40.7143,-74.0060,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Northwest Immigrant Rights Project,Northwest Immigrant Rights Project,legal_aid,Seattle,WA,47.6062,-122.3321,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+API Chaya,API Chaya,counseling,Seattle,WA,47.6062,-122.3321,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Network/La Red,The Network/La Red,shelter,Boston,MA,42.3601,-71.0589,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Asian Pacific Islander Legal Outreach,Asian Pacific Islander Legal Outreach,legal_aid,San Francisco,CA,37.7886,-122.4220,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+My Sister's Place,My Sister's Place,shelter,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+StrongHearts Native Helpline,StrongHearts Native Helpline,hotline,Rapid City,SD,44.0805,-103.2310,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Freedom House,Freedom House,shelter,Chicago,IL,41.8781,-87.6298,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Disability Rights Advocates,Disability Rights Advocates,legal_aid,Berkeley,CA,37.8715,-122.2730,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Sojourner House,Sojourner House,counseling,Providence,RI,41.8240,-71.4128,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Trans Lifeline Safe Housing Network,Trans Lifeline Safe Housing Network,shelter,Oakland,CA,37.8044,-122.2712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Greater Los Angeles,YWCA Greater Los Angeles,shelter,Los Angeles,CA,34.0426,-118.2571,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tahirih Justice Center,Tahirih Justice Center,legal_aid,Falls Church,VA,38.8699,-77.1479,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Love Is Respect,Love Is Respect,hotline,Austin,TX,30.2672,-97.7431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Asha for Women,Asha for Women,shelter,Milwaukee,WI,43.0896,-87.9498,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Los Angeles LGBT Center,The Los Angeles LGBT Center,counseling,Los Angeles,CA,34.0984,-118.3291,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+National Center for Lesbian Rights,National Center for Lesbian Rights,legal_aid,San Francisco,CA,37.7843,-122.4059,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Raksha,Raksha,shelter,Decatur,GA,33.7748,-84.2963,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+VictimConnect Resource Center,VictimConnect Resource Center,hotline,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Place for Youth,Safe Place for Youth,shelter,Venice,CA,33.9993,-118.4668,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Northwest Justice Project,Northwest Justice Project,legal_aid,Seattle,WA,47.6021,-122.3321,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The ManKind Project,The ManKind Project,counseling,Kensington,MD,39.0262,-77.0764,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wings Program,Wings Program,shelter,St. Paul,MN,44.9576,-93.1595,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Crisis Text Line,Crisis Text Line,hotline,New York,NY,40.7195,-74.0089,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Esperanza United,Esperanza United,legal_aid,Washington,DC,38.9361,-76.9869,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Breaking Free,Breaking Free,shelter,St. Paul,MN,44.9562,-93.1607,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Jewish Family Service,Jewish Family Service,counseling,San Francisco,CA,37.7853,-122.4333,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Womankind,Womankind,shelter,Duluth,MN,46.7867,-92.1005,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Lambda Legal,Lambda Legal,legal_aid,New York,NY,40.7057,-74.0082,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+RAINN National Sexual Assault Hotline,RAINN National Sexual Assault Hotline,hotline,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rosie's Place,Rosie's Place,shelter,Boston,MA,42.3389,-71.0709,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Men Stopping Violence,Men Stopping Violence,counseling,Decatur,GA,33.7733,-84.2982,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Doorways for Women and Families,Doorways for Women and Families,shelter,Arlington,VA,38.8799,-77.1067,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Immigrant Legal Resource Center,Immigrant Legal Resource Center,legal_aid,San Francisco,CA,37.7730,-122.4156,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Peer Listening Line (Trans Lifeline),Peer Listening Line (Trans Lifeline),hotline,Oakland,CA,37.8044,-122.2712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Women's Center,The Women's Center,shelter,Williamsport,PA,41.2412,-77.0011,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Clinica Romero,Clinica Romero,counseling,Boston,MA,42.3392,-71.0693,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Violence Prevention Services,Family Violence Prevention Services,shelter,San Antonio,TX,29.4241,-98.4936,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Asian Americans Advancing Justice,Asian Americans Advancing Justice,legal_aid,Los Angeles,CA,34.0501,-118.2655,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+National Suicide Prevention Lifeline,National Suicide Prevention Lifeline,hotline,New York,NY,40.7195,-74.0089,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Shade Tree,The Shade Tree,shelter,Las Vegas,NV,36.1910,-115.1437,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alabama Coalition Against DV,Alabama Coalition Against DV,shelter,Montgomery,AL,32.3792,-86.3077,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Southern Poverty Law Center,Southern Poverty Law Center,legal_aid,Montgomery,AL,32.3777,-86.3005,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SafeHouse Center Birmingham,SafeHouse Center Birmingham,shelter,Birmingham,AL,33.5207,-86.8025,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alaska Network on DV,Alaska Network on DV,shelter,Juneau,AK,58.3019,-134.4197,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+AWAIC Anchorage,AWAIC Anchorage,shelter,Anchorage,AK,61.2181,-149.9003,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Arizona Coalition to End Sexual and DV,Arizona Coalition to End Sexual and DV,legal_aid,Phoenix,AZ,33.4784,-112.0740,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Chicanos Por La Causa Phoenix,Chicanos Por La Causa Phoenix,shelter,Phoenix,AZ,33.4356,-112.0621,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tuba City Regional Health Care,Tuba City Regional Health Care,shelter,Tuba City,AZ,36.1349,-111.2401,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Arkansas Coalition Against DV,Arkansas Coalition Against DV,legal_aid,Little Rock,AR,34.7465,-92.2896,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women's Crisis Center Harrison,Women's Crisis Center Harrison,shelter,Harrison,AR,36.2298,-93.1077,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rainbow Services San Pedro,Rainbow Services San Pedro,shelter,San Pedro,CA,33.7422,-118.2923,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Center for the Pacific Asian Family,Center for the Pacific Asian Family,shelter,Los Angeles,CA,34.0750,-118.3617,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Bet Tzedek Legal Services,Bet Tzedek Legal Services,legal_aid,Los Angeles,CA,34.0614,-118.3094,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Interval House Sacramento,Interval House Sacramento,shelter,Sacramento,CA,38.5816,-121.4944,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The LGBT Community Center San Diego,The LGBT Community Center San Diego,counseling,San Diego,CA,32.7532,-117.1647,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Community Overcoming Relationship Abuse,Community Overcoming Relationship Abuse,shelter,Palm Desert,CA,33.7222,-116.3750,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Colorado Legal Services,Colorado Legal Services,legal_aid,Denver,CO,39.7442,-104.9848,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Violence Free Colorado,Violence Free Colorado,shelter,Denver,CO,39.7392,-104.9903,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Crossroads Safehouse Fort Collins,Crossroads Safehouse Fort Collins,shelter,Fort Collins,CO,40.5853,-105.0844,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Connecticut Legal Services,Connecticut Legal Services,legal_aid,Middletown,CT,41.5623,-72.6506,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Interval House Hartford,Interval House Hartford,shelter,Hartford,CT,41.7658,-72.6734,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Center for Family Justice Bridgeport,The Center for Family Justice Bridgeport,counseling,Bridgeport,CT,41.1793,-73.1894,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Delaware Coalition Against DV,Delaware Coalition Against DV,shelter,Wilmington,DE,39.7459,-75.5466,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Community Legal Aid Society Delaware,Community Legal Aid Society Delaware,legal_aid,Wilmington,DE,39.7459,-75.5466,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+House of Ruth DC,House of Ruth DC,shelter,Washington,DC,38.8992,-76.9959,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+DC SAFE,DC SAFE,counseling,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Florida Coalition Against DV,Florida Coalition Against DV,shelter,Tallahassee,FL,30.4699,-84.2589,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Spring of Tampa Bay,The Spring of Tampa Bay,shelter,Tampa,FL,27.9506,-82.4572,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Gulfcoast Legal Services,Gulfcoast Legal Services,legal_aid,Tampa,FL,27.9647,-82.4518,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SafeSpace Miami,SafeSpace Miami,shelter,North Miami Beach,FL,25.9274,-80.1627,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Georgia Coalition Against DV,Georgia Coalition Against DV,shelter,Decatur,GA,33.7748,-84.2963,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Partnership Against DV Atlanta,Partnership Against DV Atlanta,shelter,Atlanta,GA,33.7490,-84.3880,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Atlanta Volunteer Lawyers Foundation,Atlanta Volunteer Lawyers Foundation,legal_aid,Atlanta,GA,33.7590,-84.3880,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hawaii State Coalition Against DV,Hawaii State Coalition Against DV,shelter,Honolulu,HI,21.3320,-157.8671,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Parents And Children Together Honolulu,Parents And Children Together Honolulu,shelter,Honolulu,HI,21.3187,-157.8532,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Idaho Coalition Against Sexual and DV,Idaho Coalition Against Sexual and DV,shelter,Boise,ID,43.5985,-116.2422,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women's and Children's Alliance Boise,Women's and Children's Alliance Boise,shelter,Boise,ID,43.6150,-116.2023,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Illinois Coalition Against DV,Illinois Coalition Against DV,shelter,Springfield,IL,39.7817,-89.6501,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Between Friends Chicago,Between Friends Chicago,shelter,Chicago,IL,41.9836,-87.6564,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+LAF Legal Assistance Foundation Chicago,LAF Legal Assistance Foundation Chicago,legal_aid,Chicago,IL,41.8801,-87.6324,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Indiana Coalition Against DV,Indiana Coalition Against DV,shelter,Indianapolis,IN,39.7910,-86.1840,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Sheltering Wings Danville,Sheltering Wings Danville,shelter,Danville,IN,39.7606,-86.5264,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Iowa Coalition Against DV,Iowa Coalition Against DV,shelter,Des Moines,IA,41.6005,-93.6571,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Violence Center Cedar Rapids,Family Violence Center Cedar Rapids,shelter,Cedar Rapids,IA,41.9779,-91.6656,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Kansas Coalition Against Sexual and DV,Kansas Coalition Against Sexual and DV,shelter,Topeka,KS,39.0473,-95.6815,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safehome Overland Park,Safehome Overland Park,shelter,Overland Park,KS,38.9822,-94.6708,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Kentucky Coalition Against DV,Kentucky Coalition Against DV,shelter,Frankfort,KY,38.2009,-84.8733,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Center for Women and Families Louisville,Center for Women and Families Louisville,shelter,Louisville,KY,38.2527,-85.7585,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Louisiana Coalition Against DV,Louisiana Coalition Against DV,shelter,Baton Rouge,LA,30.4515,-91.1871,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Greater New Orleans,YWCA Greater New Orleans,shelter,New Orleans,LA,29.9304,-90.0831,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maine Coalition to End DV,Maine Coalition to End DV,shelter,Augusta,ME,44.3106,-69.7795,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Next Step DV Project Portland,Next Step DV Project Portland,shelter,Portland,ME,43.6591,-70.2568,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maryland Network Against DV,Maryland Network Against DV,shelter,Lanham,MD,38.9697,-76.8585,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+House of Ruth Maryland,House of Ruth Maryland,shelter,Baltimore,MD,39.3185,-76.6008,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Pro Bono Resource Center Maryland,Pro Bono Resource Center Maryland,legal_aid,Baltimore,MD,39.2964,-76.6167,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Jane Doe Inc Boston,Jane Doe Inc Boston,shelter,Boston,MA,42.3581,-71.0636,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Transition House Cambridge,Transition House Cambridge,shelter,Cambridge,MA,42.3736,-71.1097,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Casa Myrna Boston,Casa Myrna Boston,counseling,Boston,MA,42.3393,-71.0698,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Michigan Coalition to End DV,Michigan Coalition to End DV,shelter,Okemos,MI,42.6875,-84.4297,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA of Greater Flint,YWCA of Greater Flint,shelter,Flint,MI,43.0125,-83.6875,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid of Western Michigan,Legal Aid of Western Michigan,legal_aid,Grand Rapids,MI,42.9634,-85.6681,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Minnesota Coalition for Battered Women,Minnesota Coalition for Battered Women,shelter,St. Paul,MN,44.9279,-93.0817,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Cornerstone Advocacy Service Bloomington,Cornerstone Advocacy Service Bloomington,shelter,Minneapolis,MN,44.9632,-93.2656,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mississippi Coalition Against DV,Mississippi Coalition Against DV,shelter,Jackson,MS,32.2988,-90.1848,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Gulf Coast Women's Center Biloxi,Gulf Coast Women's Center Biloxi,shelter,Biloxi,MS,30.3960,-88.8853,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Missouri Coalition Against DV,Missouri Coalition Against DV,shelter,Jefferson City,MO,38.5767,-92.1735,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rose Brooks Center Kansas City,Rose Brooks Center Kansas City,shelter,Kansas City,MO,39.0997,-94.5786,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid of Western Missouri,Legal Aid of Western Missouri,legal_aid,Kansas City,MO,39.0997,-94.5853,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Montana Coalition Against DV,Montana Coalition Against DV,shelter,Helena,MT,46.5891,-112.0391,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Billings,YWCA Billings,shelter,Billings,MT,45.7833,-108.5007,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Nebraska Coalition to End Sexual and DV,Nebraska Coalition to End Sexual and DV,shelter,Lincoln,NE,40.8098,-96.6172,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women's Center for Advancement Omaha,Women's Center for Advancement Omaha,shelter,Omaha,NE,41.2388,-95.9419,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Nevada Coalition to End DV,Nevada Coalition to End DV,shelter,Reno,NV,39.5296,-119.8138,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SafeNest Las Vegas,SafeNest Las Vegas,shelter,Las Vegas,NV,36.1699,-115.1398,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Hampshire Coalition Against DV,New Hampshire Coalition Against DV,shelter,Concord,NH,43.2081,-71.5376,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA New Hampshire,YWCA New Hampshire,shelter,Manchester,NH,42.9956,-71.4548,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Jersey Coalition to End DV,New Jersey Coalition to End DV,shelter,Trenton,NJ,40.2171,-74.6597,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Womanspace Princeton,Womanspace Princeton,shelter,Ewing,NJ,40.2564,-74.7879,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Services of New Jersey,Legal Services of New Jersey,legal_aid,Edison,NJ,40.5187,-74.3571,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Mexico Coalition Against DV,New Mexico Coalition Against DV,shelter,Albuquerque,NM,35.0844,-106.6504,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Crossroads for Women Albuquerque,Crossroads for Women Albuquerque,shelter,Albuquerque,NM,35.0844,-106.6504,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New York State Coalition Against DV,New York State Coalition Against DV,shelter,Albany,NY,42.6526,-73.7562,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Sanctuary for Families NYC,Sanctuary for Families NYC,shelter,New York,NY,40.7128,-74.0060,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Her Justice NYC,Her Justice NYC,legal_aid,New York,NY,40.7133,-74.0070,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Urban Resource Institute NYC,Urban Resource Institute NYC,counseling,New York,NY,40.7580,-73.9855,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+North Carolina Coalition Against DV,North Carolina Coalition Against DV,shelter,Durham,NC,35.9940,-78.9018,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Violence Prevention Center Greensboro,Family Violence Prevention Center Greensboro,shelter,Greensboro,NC,36.0726,-79.7920,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid of North Carolina,Legal Aid of North Carolina,legal_aid,Raleigh,NC,35.7721,-78.6382,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+North Dakota Council on Abused Women,North Dakota Council on Abused Women,shelter,Bismarck,ND,46.8083,-100.7837,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Abused Adult Resource Center Fargo,Abused Adult Resource Center Fargo,shelter,Fargo,ND,46.8772,-96.7898,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ohio Domestic Violence Network,Ohio Domestic Violence Network,shelter,Columbus,OH,40.0742,-82.9571,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Domestic Violence & Child Advocacy Center Cleveland,Domestic Violence & Child Advocacy Center Cleveland,shelter,Cleveland,OH,41.4993,-81.6944,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid Society of Cleveland,Legal Aid Society of Cleveland,legal_aid,Cleveland,OH,41.4848,-81.7007,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oklahoma Coalition Against DV,Oklahoma Coalition Against DV,shelter,Oklahoma City,OK,35.5207,-97.5348,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Oklahoma City,YWCA Oklahoma City,shelter,Oklahoma City,OK,35.4946,-97.5308,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oregon Coalition Against DV,Oregon Coalition Against DV,shelter,Portland,OR,45.4949,-122.6627,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Bradley Angle Portland,Bradley Angle Portland,shelter,Portland,OR,45.5231,-122.6765,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid Services of Oregon,Legal Aid Services of Oregon,legal_aid,Portland,OR,45.5198,-122.6764,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Pennsylvania Coalition Against DV,Pennsylvania Coalition Against DV,shelter,Harrisburg,PA,40.3150,-76.8261,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women Against Abuse Philadelphia,Women Against Abuse Philadelphia,shelter,Philadelphia,PA,39.9526,-75.1652,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rhode Island Coalition Against DV,Rhode Island Coalition Against DV,shelter,Warwick,RI,41.7226,-71.4506,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women's Resource Center Newport,Women's Resource Center Newport,shelter,Newport,RI,41.4901,-71.3128,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+South Carolina Coalition Against DV,South Carolina Coalition Against DV,shelter,Columbia,SC,34.0007,-81.0348,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Harbor Charleston,Safe Harbor Charleston,shelter,Charleston,SC,32.7765,-79.9311,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+South Dakota Coalition Ending DV,South Dakota Coalition Ending DV,shelter,Pierre,SD,44.3683,-100.3510,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Working Against Violence Sioux Falls,Working Against Violence Sioux Falls,shelter,Sioux Falls,SD,43.5460,-96.7313,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tennessee Coalition to End DV,Tennessee Coalition to End DV,shelter,Nashville,TN,36.1039,-86.6864,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Nashville,YWCA Nashville,shelter,Nashville,TN,36.1627,-86.7816,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid Society of Middle Tennessee,Legal Aid Society of Middle Tennessee,legal_aid,Nashville,TN,36.1645,-86.7810,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Texas Council on Family Violence,Texas Council on Family Violence,shelter,Austin,TX,30.2672,-97.7431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Bridge Over Troubled Waters Dallas,The Bridge Over Troubled Waters Dallas,shelter,Dallas,TX,32.7767,-96.7970,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Casa de Esperanza Houston,Casa de Esperanza Houston,shelter,Houston,TX,29.7604,-95.3698,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Lone Star Legal Aid,Lone Star Legal Aid,legal_aid,Houston,TX,29.7457,-95.4624,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Utah Domestic Violence Coalition,Utah Domestic Violence Coalition,shelter,Salt Lake City,UT,40.7642,-111.8998,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Utah Salt Lake City,YWCA Utah Salt Lake City,shelter,Salt Lake City,UT,40.7625,-111.8830,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Vermont Network Against DV,Vermont Network Against DV,shelter,Montpelier,VT,44.2601,-72.5754,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+STEPS to End DV Burlington,STEPS to End DV Burlington,shelter,Burlington,VT,44.4759,-73.2121,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Virginia Sexual and DV Action Alliance,Virginia Sexual and DV Action Alliance,shelter,Richmond,VA,37.5538,-77.4783,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Richmond,YWCA Richmond,shelter,Richmond,VA,37.5407,-77.4360,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Aid Justice Center Virginia,Legal Aid Justice Center Virginia,legal_aid,Charlottesville,VA,38.0336,-78.4905,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Washington State Coalition Against DV,Washington State Coalition Against DV,shelter,Olympia,WA,47.0379,-122.9007,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Beginnings Domestic Violence Center Seattle,New Beginnings Domestic Violence Center Seattle,shelter,Seattle,WA,47.6062,-122.3321,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Spokane,YWCA Spokane,shelter,Spokane,WA,47.6672,-117.4257,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+West Virginia Coalition Against DV,West Virginia Coalition Against DV,shelter,Charleston,WV,38.3498,-81.6326,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Resolve Family Abuse Charleston,YWCA Resolve Family Abuse Charleston,shelter,Charleston,WV,38.3368,-81.6247,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+End Domestic Abuse Wisconsin,End Domestic Abuse Wisconsin,shelter,Madison,WI,43.0808,-89.3648,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Sojourner Family Peace Center Milwaukee,Sojourner Family Peace Center Milwaukee,shelter,Milwaukee,WI,43.0539,-87.9173,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Legal Action of Wisconsin,Legal Action of Wisconsin,legal_aid,Milwaukee,WI,43.0389,-87.9119,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wyoming Coalition Against DV,Wyoming Coalition Against DV,shelter,Laramie,WY,41.3114,-105.5911,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SAFE Project Cheyenne,SAFE Project Cheyenne,shelter,Cheyenne,WY,41.1400,-104.8202,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ali Forney Center NYC,Ali Forney Center NYC,shelter,New York,NY,40.7532,-73.9934,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+True Colors United,True Colors United,shelter,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Trevor Project,Trevor Project,hotline,West Hollywood,CA,34.0900,-118.3617,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+True Colors Residence Hartford,True Colors Residence Hartford,shelter,Bloomfield,CT,41.8251,-72.7215,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Audre Lorde Project NYC,Audre Lorde Project NYC,counseling,Brooklyn,NY,40.6782,-73.9442,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Lyon-Martin Health Services San Francisco,Lyon-Martin Health Services San Francisco,shelter,San Francisco,CA,37.7722,-122.4215,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oasis Legal Services Los Angeles,Oasis Legal Services Los Angeles,shelter,Los Angeles,CA,34.1004,-118.3093,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Northwest Network Seattle,Northwest Network Seattle,shelter,Seattle,WA,47.6062,-122.3321,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The LGBT National Hotline,The LGBT National Hotline,shelter,San Francisco,CA,37.7749,-122.4194,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+GLBT Center of Central PA,GLBT Center of Central PA,shelter,Harrisburg,PA,40.2737,-76.8844,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Rescue Boston,Family Rescue Boston,shelter,Dorchester,MA,42.3029,-71.0691,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Crisis Center Baltimore,Family Crisis Center Baltimore,shelter,Baltimore,MD,39.2904,-76.6122,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Service League Huntington,Family Service League Huntington,shelter,Huntington,NY,40.8679,-73.4257,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Greenwood House Ewing,Greenwood House Ewing,shelter,Ewing,NJ,40.2566,-74.7879,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe+Sound Somerset,Safe+Sound Somerset,shelter,Somerville,NJ,40.5712,-74.6099,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Passage Northampton,Safe Passage Northampton,shelter,Northampton,MA,42.3251,-72.6412,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Elizabeth Stone House Boston,Elizabeth Stone House Boston,shelter,Jamaica Plain,MA,42.3097,-71.1106,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+On The Rise St. Louis,On The Rise St. Louis,shelter,St. Louis,MO,38.6270,-90.2282,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mutual Ground Aurora,Mutual Ground Aurora,shelter,Aurora,IL,41.7606,-88.3201,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Life Span Rochester,Life Span Rochester,shelter,Rochester,NY,43.1345,-77.6254,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+1in6 Male Survivor Helpline,1in6 Male Survivor Helpline,shelter,Los Angeles,CA,34.0900,-118.3617,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Male Survivor Alliance,Male Survivor Alliance,shelter,San Francisco,CA,37.7749,-122.4194,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Valley Crisis Center Lancaster,Valley Crisis Center Lancaster,counseling,Lancaster,CA,34.6868,-118.1542,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Equinox Male Survivor Services Albany,Equinox Male Survivor Services Albany,shelter,Albany,NY,42.6526,-73.7562,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Next Door Solutions Male Program San Jose,Next Door Solutions Male Program San Jose,counseling,San Jose,CA,37.3261,-121.8816,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Abused Deaf Women's Advocacy Services Seattle,Abused Deaf Women's Advocacy Services Seattle,shelter,Seattle,WA,47.6911,-122.3826,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Abused Women's Aid in Crisis Rochester,Abused Women's Aid in Crisis Rochester,shelter,Rochester,NY,43.1566,-77.6088,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Barrier Free Living NYC,Barrier Free Living NYC,shelter,New York,NY,40.7236,-73.9832,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Disability Rights Education & Defense Fund,Disability Rights Education & Defense Fund,legal_aid,Berkeley,CA,37.8562,-122.2691,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Navajo Nation DV Program Window Rock,Navajo Nation DV Program Window Rock,shelter,Window Rock,AZ,35.6805,-109.0525,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+White Buffalo Calf Woman Society Pine Ridge,White Buffalo Calf Woman Society Pine Ridge,shelter,Mission,SD,43.2994,-100.6601,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Sacred Circle National Resource Center Alexandria,Sacred Circle National Resource Center Alexandria,shelter,Rapid City,SD,44.0805,-103.2310,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mending the Sacred Hoop Duluth,Mending the Sacred Hoop Duluth,shelter,Duluth,MN,46.7867,-92.1005,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hopi Tribe DV Program Kykotsmovi,Hopi Tribe DV Program Kykotsmovi,shelter,Kykotsmovi,AZ,35.8406,-110.6031,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Zuni Wellness Center Zuni Pueblo,Zuni Wellness Center Zuni Pueblo,shelter,Zuni,NM,35.0722,-108.8509,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Cherokee Nation DV Program Tahlequah,Cherokee Nation DV Program Tahlequah,shelter,Tahlequah,OK,35.9151,-94.9700,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Choctaw Nation Family Services Durant,Choctaw Nation Family Services Durant,shelter,Durant,OK,33.9937,-96.3708,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alaska Native Women's Resource Center Anchorage,Alaska Native Women's Resource Center Anchorage,shelter,Anchorage,AK,61.2181,-149.9003,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tohono O'odham DV Program Sells,Tohono O'odham DV Program Sells,shelter,Sells,AZ,31.9120,-111.8762,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Crisis Center Tuscaloosa,Family Crisis Center Tuscaloosa,shelter,Tuscaloosa,AL,33.2098,-87.5692,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Shelter From The Storm Elko,Shelter From The Storm Elko,shelter,Elko,NV,40.8324,-115.7631,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Resource Center Flagstaff,Family Resource Center Flagstaff,shelter,Flagstaff,AZ,35.2109,-111.6448,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Crisis Resource Center Bryan,Family Crisis Resource Center Bryan,shelter,Bryan,TX,30.6744,-96.3700,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Violence Prevention Greenville,Family Violence Prevention Greenville,shelter,Greenville,NC,35.6127,-77.3664,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Families First Grand Junction,Families First Grand Junction,shelter,Grand Junction,CO,39.0639,-108.5506,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safety Net Missoula,Safety Net Missoula,shelter,Missoula,MT,46.8721,-113.9940,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Peace & Home Eugene,Peace & Home Eugene,shelter,Eugene,OR,44.0521,-123.0868,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Domestic Violence Services Yakima,Domestic Violence Services Yakima,shelter,Yakima,WA,46.6021,-120.5059,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Turning Point Domestic Violence Services Laramie,Turning Point Domestic Violence Services Laramie,shelter,Laramie,WY,41.3114,-105.5911,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Women's Center Huntsville,The Women's Center Huntsville,shelter,Huntsville,AL,34.6834,-86.6113,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Metropolitan Organization to Counter Sexual Assault St. Louis,Metropolitan Organization to Counter Sexual Assault St. Louis,shelter,Kansas City,MO,39.0698,-94.5844,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Emerge Center Memphis,Emerge Center Memphis,shelter,Memphis,TN,35.1495,-90.0490,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Hope for Women Rockland,New Hope for Women Rockland,shelter,Rockland,ME,44.1034,-69.1089,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alternatives for Battered Women Rochester,Alternatives for Battered Women Rochester,shelter,Rochester,NY,43.1566,-77.6088,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Crime Victims Center Fort Worth,Crime Victims Center Fort Worth,shelter,Fort Worth,TX,32.7555,-97.3169,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tulsa Domestic Violence Intervention Services,Tulsa Domestic Violence Intervention Services,shelter,Tulsa,OK,36.1540,-95.9928,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Salvation Army DV Program Indianapolis,The Salvation Army DV Program Indianapolis,shelter,Indianapolis,IN,39.8158,-86.1584,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Emerge Jacksonville,Emerge Jacksonville,shelter,Jacksonville,FL,30.3322,-81.6557,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Center Against Rape & DV Fresno,Center Against Rape & DV Fresno,shelter,Fresno,CA,36.7545,-119.7856,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+WEAVE Sacramento,WEAVE Sacramento,shelter,Sacramento,CA,38.5816,-121.4944,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Community Violence Solutions Columbus,Community Violence Solutions Columbus,shelter,Columbus,OH,39.9612,-82.9988,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Nest Charlotte,Safe Nest Charlotte,shelter,Charlotte,NC,35.2271,-80.8431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hubbard House Jacksonville,Hubbard House Jacksonville,shelter,Jacksonville,FL,30.3322,-81.6557,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+El Paso Center for Children,El Paso Center for Children,shelter,El Paso,TX,31.7619,-106.4850,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Center of Hope Detroit,Center of Hope Detroit,shelter,Detroit,MI,42.3314,-83.0458,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+A Safe Place Waukegan,A Safe Place Waukegan,shelter,Waukegan,IL,42.3636,-87.8448,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Laura's House Mission Viejo,Laura's House Mission Viejo,shelter,Irvine,CA,33.6839,-117.7947,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Abused Persons Program Raleigh,Abused Persons Program Raleigh,shelter,Raleigh,NC,35.7796,-78.6382,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SafeHouse Denver,SafeHouse Denver,shelter,Denver,CO,39.7392,-104.9903,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Service of Rhode Island Providence,Family Service of Rhode Island Providence,shelter,Providence,RI,41.8240,-71.4128,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rural Advocates Bastrop,Rural Advocates Bastrop,shelter,Bastrop,TX,30.1105,-97.3152,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Crisis Services Crossville,Family Crisis Services Crossville,shelter,Crossville,TN,35.9495,-85.0269,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Haven House Bowling Green,Haven House Bowling Green,shelter,Bowling Green,KY,36.9685,-86.4808,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Madelia DV Advocacy Madelia,Madelia DV Advocacy Madelia,shelter,Madelia,MN,44.0505,-94.4188,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+HOPE of Ogle County Oregon,HOPE of Ogle County Oregon,shelter,Oregon,IL,42.0147,-89.3323,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alternatives to Violence Wilmington,Alternatives to Violence Wilmington,shelter,Wilmington,OH,39.4453,-83.8285,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Harbor Crisis Center Gadsden,Safe Harbor Crisis Center Gadsden,shelter,Gadsden,AL,34.0143,-86.0066,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mountain Comprehensive Care Prestonsburg,Mountain Comprehensive Care Prestonsburg,shelter,Prestonsburg,KY,37.6634,-82.7713,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+HELP of Door County Sturgeon Bay,HELP of Door County Sturgeon Bay,shelter,Sturgeon Bay,WI,44.8342,-87.3770,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Crisis Center Galesburg,Family Crisis Center Galesburg,shelter,Galesburg,IL,40.9478,-90.3712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tri-County Shelter Clinton,Tri-County Shelter Clinton,shelter,Clinton,MO,38.3686,-93.7785,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alliance Against Family Violence Quincy,Alliance Against Family Violence Quincy,shelter,Quincy,IL,39.9356,-91.4099,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Community Action Partnership Butte,Community Action Partnership Butte,shelter,Butte,MT,46.0038,-112.5348,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Northwest Kansas DV/SA Services Goodland,Northwest Kansas DV/SA Services Goodland,shelter,Goodland,KS,39.3508,-101.7104,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Crisis Center of Comal County New Braunfels,Crisis Center of Comal County New Braunfels,shelter,New Braunfels,TX,29.7030,-98.1245,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Violence Prevention Services Greenfield,Family Violence Prevention Services Greenfield,shelter,Greenfield,MA,42.5876,-72.5995,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Passage Bentonville,Safe Passage Bentonville,shelter,Bentonville,AR,36.3729,-94.2088,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Someplace Safe Lewiston,Someplace Safe Lewiston,shelter,Lewiston,ID,46.4165,-117.0177,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+CARE House Decatur,CARE House Decatur,shelter,Decatur,AL,34.6059,-86.9833,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YWCA Walla Walla,YWCA Walla Walla,shelter,Walla Walla,WA,46.0646,-118.3430,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Domestic & Sexual Violence Program Sitka,Domestic & Sexual Violence Program Sitka,shelter,Sitka,AK,57.0531,-135.3300,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women's Crisis Services Ketchikan,Women's Crisis Services Ketchikan,shelter,Ketchikan,AK,55.3422,-131.6461,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SAFE in Hunterdon Flemington,SAFE in Hunterdon Flemington,shelter,Flemington,NJ,40.5123,-74.8593,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Serenity Inc Waupun,Serenity Inc Waupun,shelter,Waupun,WI,43.6333,-88.7295,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mountain Crisis Services Bryson City,Mountain Crisis Services Bryson City,shelter,Bryson City,NC,35.4309,-83.4474,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hospitality House Astoria,Hospitality House Astoria,shelter,Astoria,OR,46.1879,-123.8313,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Avalon Center Alamogordo,Avalon Center Alamogordo,shelter,Alamogordo,NM,32.8995,-105.9603,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Freedom's Path Willmar,Freedom's Path Willmar,shelter,Willmar,MN,45.1219,-95.0433,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Resource Center Mobridge,Family Resource Center Mobridge,shelter,Mobridge,SD,45.5375,-100.4293,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Cedar Ridge Ellensburg,Cedar Ridge Ellensburg,shelter,Ellensburg,WA,46.9965,-120.5478,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Shelter Care Coos Bay,Shelter Care Coos Bay,shelter,Coos Bay,OR,43.3665,-124.2179,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mountain Resource Center Conifer,Mountain Resource Center Conifer,shelter,Conifer,CO,39.5164,-105.3078,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Guardian Shelter Batesville,Guardian Shelter Batesville,shelter,Batesville,AR,35.7698,-91.6407,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+OASIS Weslaco,OASIS Weslaco,shelter,Weslaco,TX,26.1595,-97.9908,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Violence Intervention Program Paragould,Family Violence Intervention Program Paragould,shelter,Paragould,AR,36.0584,-90.4973,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tidal Wave Response Network Kodiak,Tidal Wave Response Network Kodiak,shelter,Kodiak,AK,57.7900,-152.4072,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+REACH Inc Siler City,REACH Inc Siler City,shelter,Siler City,NC,35.7235,-79.4622,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+S.A.F.E. House Riverton,S.A.F.E. House Riverton,shelter,Riverton,WY,43.0250,-108.3801,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Crisis Center Gillette,The Crisis Center Gillette,shelter,Gillette,WY,44.2911,-105.5022,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Haven Shelter Rock Springs,Safe Haven Shelter Rock Springs,shelter,Rock Springs,WY,41.5875,-109.2029,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Transitions Abilene,Transitions Abilene,shelter,Abilene,TX,32.4487,-99.7331,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Crisis Center of East Texas Tyler,Family Crisis Center of East Texas Tyler,shelter,Tyler,TX,32.3513,-95.3011,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Volunteers of America Coeur d'Alene,Volunteers of America Coeur d'Alene,shelter,Coeur d'Alene,ID,47.6777,-116.7805,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Services of Southeast Idaho Pocatello,Family Services of Southeast Idaho Pocatello,shelter,Pocatello,ID,42.8713,-112.4455,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Domestic Violence & Rape Crisis Center Elko,Domestic Violence & Rape Crisis Center Elko,shelter,Elko,NV,40.8324,-115.7631,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Advocates to End Domestic Violence Burlington,Advocates to End Domestic Violence Burlington,shelter,Burlington,VT,44.4759,-73.2121,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hope Shelter Pontiac,Hope Shelter Pontiac,shelter,Pontiac,IL,40.8809,-88.6298,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+DuBois Center Against Abuse DuBois,DuBois Center Against Abuse DuBois,shelter,DuBois,PA,41.1195,-78.7603,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women In Crisis Saratoga Springs,Women In Crisis Saratoga Springs,shelter,Saratoga Springs,NY,43.0831,-73.7846,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Penobscot Nation DV Program Indian Island,Penobscot Nation DV Program Indian Island,shelter,Indian Island,ME,44.8528,-68.6964,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Nest Las Vegas Greyhound Partner,Safe Nest Las Vegas Greyhound Partner,shelter,Las Vegas,NV,36.1598,-115.1951,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+RAINN National Virtual Services,RAINN National Virtual Services,counseling,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Texas Advocacy Project Virtual Legal,Texas Advocacy Project Virtual Legal,legal_aid,Austin,TX,30.2672,-97.7431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Promise Nashville Transportation,Family Promise Nashville Transportation,shelter,Nashville,TN,36.1541,-86.7816,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wings Program Greyhound Partner Minneapolis,Wings Program Greyhound Partner Minneapolis,shelter,Minneapolis,MN,44.9263,-93.2624,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Montana Coalition Virtual Counseling,Montana Coalition Virtual Counseling,counseling,Helena,MT,46.5884,-112.0245,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Idaho Legal Aid Services Virtual,Idaho Legal Aid Services Virtual,legal_aid,Boise,ID,43.6150,-116.2023,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Georgia Coalition Gas Voucher Program,Georgia Coalition Gas Voucher Program,shelter,Decatur,GA,33.7748,-84.2963,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Lutheran Social Services Rural Transport,Lutheran Social Services Rural Transport,shelter,Fargo,ND,46.8997,-96.8061,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wyoming Coalition Virtual Support,Wyoming Coalition Virtual Support,counseling,Laramie,WY,41.3114,-105.5911,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Mexico Coalition Relocation Help,New Mexico Coalition Relocation Help,shelter,Albuquerque,NM,35.0844,-106.6504,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maine Coalition Virtual & Transport,Maine Coalition Virtual & Transport,shelter,Bangor,ME,44.8016,-68.7712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alaska Network Virtual Legal Aid,Alaska Network Virtual Legal Aid,legal_aid,Juneau,AK,58.3019,-134.4197,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Catholic Charities Greyhound Partner,Catholic Charities Greyhound Partner,shelter,Alexandria,VA,38.8048,-77.0469,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Iowa Coalition Virtual Counseling,Iowa Coalition Virtual Counseling,counseling,Des Moines,IA,41.5868,-93.6250,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Urban Resource Institute Pet-Safe NYC,Urban Resource Institute Pet-Safe NYC,shelter,Bronx,NY,40.8601,-73.9004,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SAF-T Program Phoenix,SAF-T Program Phoenix,shelter,Phoenix,AZ,33.5698,-112.0789,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ahimsa House Atlanta Pet-Safe,Ahimsa House Atlanta Pet-Safe,shelter,Atlanta,GA,33.8825,-84.3397,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+RedRover Relief Pet Fostering,RedRover Relief Pet Fostering,shelter,Sacramento,CA,38.5816,-121.4944,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Peace & Home Eugene Pet-Safe,Peace & Home Eugene Pet-Safe,shelter,Eugene,OR,44.0521,-123.0868,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Family Rescue Boston Pet Program,Family Rescue Boston Pet Program,shelter,Cambridge,MA,42.3601,-71.0589,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+The Shade Tree Las Vegas Pets,The Shade Tree Las Vegas Pets,shelter,Las Vegas,NV,36.1823,-115.1390,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Sojourner Center Pet Fostering Phoenix,Sojourner Center Pet Fostering Phoenix,shelter,Phoenix,AZ,33.4484,-112.0740,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Seattle Humane DV Pet Program,Seattle Humane DV Pet Program,shelter,Bellevue,WA,47.5762,-122.1499,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Animal Welfare League Pet-Safe Chicago,Animal Welfare League Pet-Safe Chicago,shelter,Chicago,IL,41.7833,-87.6251,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rose Brooks Pet-Safe Kansas City,Rose Brooks Pet-Safe Kansas City,shelter,Kansas City,MO,39.0997,-94.5786,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Alliance Pet Program Charlotte,Safe Alliance Pet Program Charlotte,shelter,Charlotte,NC,35.2271,-80.8431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Colorado Coalition Pet Support,Colorado Coalition Pet Support,shelter,Denver,CO,39.7435,-104.9725,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Austin Pets Alive DV Program,Austin Pets Alive DV Program,shelter,Austin,TX,30.2586,-97.7614,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Louisiana Coalition Pet Initiative,Louisiana Coalition Pet Initiative,shelter,Baton Rouge,LA,30.4515,-91.1871,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Connecticut Coalition Pet Safety,Connecticut Coalition Pet Safety,shelter,East Hartford,CT,41.7620,-72.6121,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+San Diego Humane DV Pet Program,San Diego Humane DV Pet Program,shelter,San Diego,CA,32.7658,-117.2034,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tampa SPCA Pet-Safe Program,Tampa SPCA Pet-Safe Program,shelter,Largo,FL,27.9080,-82.7873,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Nashville Humane Pet Sanctuary,Nashville Humane Pet Sanctuary,shelter,Nashville,TN,36.1372,-86.8112,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Portland Oregon Humane DV Pets,Portland Oregon Humane DV Pets,shelter,Portland,OR,45.5944,-122.6549,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Minnesota Federated Pet Support,Minnesota Federated Pet Support,shelter,St Paul,MN,44.9300,-93.0864,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wisconsin Coalition Pet Program,Wisconsin Coalition Pet Program,shelter,Madison,WI,43.0831,-89.3641,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Arizona Humane Safe Animal Foster,Arizona Humane Safe Animal Foster,shelter,Phoenix,AZ,33.5698,-112.0789,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Pennsylvania Coalition Pet Initiative,Pennsylvania Coalition Pet Initiative,shelter,Harrisburg,PA,40.3225,-76.8284,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ohio Coalition Pet Safe Housing,Ohio Coalition Pet Safe Housing,shelter,Columbus,OH,40.0794,-82.9482,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Indiana Coalition Pet Partners,Indiana Coalition Pet Partners,shelter,Indianapolis,IN,39.7917,-86.1804,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Virginia Pet & Women Safety,Virginia Pet & Women Safety,shelter,Richmond,VA,37.5407,-77.4360,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Michigan Coalition Pet Safety,Michigan Coalition Pet Safety,shelter,Okemos,MI,42.6975,-84.4289,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maryland Network Pet Partners,Maryland Network Pet Partners,shelter,Lanham,MD,38.9631,-76.8636,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oregon Coalition Pet Safe,Oregon Coalition Pet Safe,shelter,Portland,OR,45.4887,-122.6584,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ali Forney Center NYC Youth,Ali Forney Center NYC Youth,shelter,New York,NY,40.7527,-73.9918,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+True Colors Fund Youth Network,True Colors Fund Youth Network,shelter,Los Angeles,CA,33.9784,-118.3937,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Covenant House NYC LGBTQ+ Youth,Covenant House NYC LGBTQ+ Youth,shelter,New York,NY,40.7602,-73.9955,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Lost-N-Found Youth Atlanta LGBTQ+,Lost-N-Found Youth Atlanta LGBTQ+,shelter,Atlanta,GA,33.8238,-84.3515,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+GLASS Youth & Community Services,GLASS Youth & Community Services,shelter,Princeton,NJ,40.3508,-74.6596,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ruth Ellis Center Detroit LGBTQ+ Youth,Ruth Ellis Center Detroit LGBTQ+ Youth,shelter,Highland Park,MI,42.4053,-83.0975,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+SMYAL DC LGBTQ+ Youth,SMYAL DC LGBTQ+ Youth,shelter,Washington,DC,38.8839,-76.9959,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+LifeWorks Austin LGBTQ+ Youth,LifeWorks Austin LGBTQ+ Youth,shelter,Austin,TX,30.2344,-97.7669,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oasis Center Nashville LGBTQ+ Youth,Oasis Center Nashville LGBTQ+ Youth,shelter,Nashville,TN,36.1611,-86.7971,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Larkin Street Youth LGBTQ+ SF,Larkin Street Youth LGBTQ+ SF,shelter,San Francisco,CA,37.7817,-122.4141,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Triangle Foundation Youth Shelter Detroit,Triangle Foundation Youth Shelter Detroit,shelter,Detroit,MI,42.4313,-83.2122,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+OutYouth Austin LGBTQ+ Services,OutYouth Austin LGBTQ+ Services,shelter,Austin,TX,30.3088,-97.7242,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Broadway Youth Center Chicago LGBTQ+,Broadway Youth Center Chicago LGBTQ+,shelter,Chicago,IL,41.9401,-87.6459,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+YES (Youth Emergency Services) Seattle,YES (Youth Emergency Services) Seattle,shelter,Seattle,WA,47.6188,-122.3195,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Outside In Portland LGBTQ+ Youth,Outside In Portland LGBTQ+ Youth,shelter,Portland,OR,45.5192,-122.6850,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alabama Pro Se Protective Order Forms,Alabama Pro Se Protective Order Forms,legal_forms,Montgomery,AL,32.3668,-86.3000,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alaska Pro Se Court Forms,Alaska Pro Se Court Forms,legal_forms,Anchorage,AK,61.2181,-149.9003,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Arizona Self-Service Center,Arizona Self-Service Center,legal_forms,Phoenix,AZ,33.4484,-112.0740,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Arkansas Legal Forms Online,Arkansas Legal Forms Online,legal_forms,Little Rock,AR,34.7465,-92.2896,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+California Pro Se Self-Help,California Pro Se Self-Help,legal_forms,San Francisco,CA,37.7749,-122.4194,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Colorado Legal Forms,Colorado Legal Forms,legal_forms,Denver,CO,39.7392,-104.9903,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Connecticut Legal Self-Help,Connecticut Legal Self-Help,legal_forms,Hartford,CT,41.7658,-72.6734,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Delaware Pro Se Forms,Delaware Pro Se Forms,legal_forms,Wilmington,DE,39.7391,-75.5398,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Florida Self-Help Center,Florida Self-Help Center,legal_forms,Tallahassee,FL,30.4383,-84.2807,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Georgia Pro Se Assistance,Georgia Pro Se Assistance,legal_forms,Atlanta,GA,33.7490,-84.3880,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hawaii Legal Forms Online,Hawaii Legal Forms Online,legal_forms,Honolulu,HI,21.3099,-157.8581,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Idaho Pro Se Center,Idaho Pro Se Center,legal_forms,Boise,ID,43.6150,-116.2023,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Illinois Legal Forms,Illinois Legal Forms,legal_forms,Chicago,IL,41.8781,-87.6298,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Indiana Pro Se Forms,Indiana Pro Se Forms,legal_forms,Indianapolis,IN,39.7684,-86.1581,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Iowa Legal Self-Help,Iowa Legal Self-Help,legal_forms,Des Moines,IA,41.5868,-93.6250,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Kansas Pro Se Resources,Kansas Pro Se Resources,legal_forms,Topeka,KS,39.0473,-95.6752,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Kentucky Court Forms,Kentucky Court Forms,legal_forms,Frankfort,KY,38.2009,-84.8733,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Louisiana Pro Se Center,Louisiana Pro Se Center,legal_forms,New Orleans,LA,29.9511,-90.0715,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maine Court Forms,Maine Court Forms,legal_forms,Portland,ME,43.6591,-70.2568,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maryland Self-Help Centers,Maryland Self-Help Centers,legal_forms,Annapolis,MD,38.9784,-76.4922,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Massachusetts Pro Se Help,Massachusetts Pro Se Help,legal_forms,Boston,MA,42.3601,-71.0589,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Michigan Legal Forms,Michigan Legal Forms,legal_forms,Lansing,MI,42.7325,-84.5555,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Minnesota Self-Help Center,Minnesota Self-Help Center,legal_forms,St Paul,MN,44.9537,-93.0900,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mississippi Court Forms,Mississippi Court Forms,legal_forms,Jackson,MS,32.2988,-90.1848,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Missouri Pro Se Resources,Missouri Pro Se Resources,legal_forms,Jefferson City,MO,38.5767,-92.1735,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Montana Legal Forms,Montana Legal Forms,legal_forms,Helena,MT,46.5891,-112.0391,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Nebraska Court Forms,Nebraska Court Forms,legal_forms,Lincoln,NE,40.8136,-96.7026,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Nevada Self-Help Center,Nevada Self-Help Center,legal_forms,Las Vegas,NV,36.1699,-115.1398,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Hampshire Legal Forms,New Hampshire Legal Forms,legal_forms,Concord,NH,43.2081,-71.5376,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Jersey Pro Se Forms,New Jersey Pro Se Forms,legal_forms,Trenton,NJ,40.2206,-74.7597,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Mexico Court Forms,New Mexico Court Forms,legal_forms,Santa Fe,NM,35.6870,-105.9378,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New York DIY Forms,New York DIY Forms,legal_forms,New York,NY,40.7128,-74.0060,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+North Carolina Legal Forms,North Carolina Legal Forms,legal_forms,Raleigh,NC,35.7796,-78.6382,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+North Dakota Court Forms,North Dakota Court Forms,legal_forms,Bismarck,ND,46.8083,-100.7837,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ohio Legal Forms,Ohio Legal Forms,legal_forms,Columbus,OH,39.9612,-82.9988,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oklahoma Pro Se Center,Oklahoma Pro Se Center,legal_forms,Oklahoma City,OK,35.4676,-97.5164,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Oregon Court Forms,Oregon Court Forms,legal_forms,Salem,OR,44.9429,-123.0351,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Pennsylvania Legal Forms,Pennsylvania Legal Forms,legal_forms,Harrisburg,PA,40.2732,-76.8867,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rhode Island Court Forms,Rhode Island Court Forms,legal_forms,Providence,RI,41.8240,-71.4128,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+South Carolina Legal Forms,South Carolina Legal Forms,legal_forms,Columbia,SC,34.0007,-81.0348,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+South Dakota Court Forms,South Dakota Court Forms,legal_forms,Pierre,SD,44.3683,-100.3512,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Tennessee Legal Forms,Tennessee Legal Forms,legal_forms,Nashville,TN,36.1627,-86.7816,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Texas Legal Forms,Texas Legal Forms,legal_forms,Austin,TX,30.2672,-97.7431,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Utah Court Forms,Utah Court Forms,legal_forms,Salt Lake City,UT,40.7608,-111.8910,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Vermont Court Forms,Vermont Court Forms,legal_forms,Montpelier,VT,44.2601,-72.5754,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Virginia Legal Forms,Virginia Legal Forms,legal_forms,Richmond,VA,37.5407,-77.4360,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Washington State Court Forms,Washington State Court Forms,legal_forms,Olympia,WA,47.0379,-122.9007,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+West Virginia Court Forms,West Virginia Court Forms,legal_forms,Charleston,WV,38.3498,-81.6326,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wisconsin Legal Forms,Wisconsin Legal Forms,legal_forms,Madison,WI,43.0731,-89.4012,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wyoming Court Forms,Wyoming Court Forms,legal_forms,Cheyenne,WY,41.1400,-104.8202,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Los Angeles,Planned Parenthood Los Angeles,reproductive_healthcare,Los Angeles,CA,34.0522,-118.3723,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Carafem San Francisco,Carafem San Francisco,reproductive_healthcare,San Francisco,CA,37.7899,-122.3994,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood NYC - Margaret Sanger Center,Planned Parenthood NYC - Margaret Sanger Center,reproductive_healthcare,New York,NY,40.7258,-73.9938,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Chicago Women's Health Center,Chicago Women's Health Center,reproductive_healthcare,Chicago,IL,41.9563,-87.6542,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Boulder Valley Women's Health Center,Boulder Valley Women's Health Center,reproductive_healthcare,Boulder,CO,40.0281,-105.2517,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Cedar River Clinics Seattle,Cedar River Clinics Seattle,reproductive_healthcare,Seattle,WA,47.6035,-122.3120,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Portland Women's Healthcare,Portland Women's Healthcare,reproductive_healthcare,Portland,OR,45.5327,-122.6312,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Southwestern Women's Options Albuquerque,Southwestern Women's Options Albuquerque,reproductive_healthcare,Albuquerque,NM,35.0668,-106.6116,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Maryland,Planned Parenthood Maryland,reproductive_healthcare,Baltimore,MD,39.2904,-76.6122,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Minneapolis Planned Parenthood,Minneapolis Planned Parenthood,reproductive_healthcare,Minneapolis,MN,44.9489,-93.2978,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hope Haven Recovery House LA,Hope Haven Recovery House LA,recovery_housing,Los Angeles,CA,34.0407,-118.2468,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Space Recovery SF,Safe Space Recovery SF,recovery_housing,San Francisco,CA,37.7799,-122.4182,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Healing House NYC,Healing House NYC,recovery_housing,New York,NY,40.7328,-73.9901,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Midwest Recovery Haven,Midwest Recovery Haven,recovery_housing,Chicago,IL,41.9220,-87.6530,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Pacific Northwest Recovery House,Pacific Northwest Recovery House,recovery_housing,Seattle,WA,47.6323,-122.3210,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Survivor Support Childcare LA,Survivor Support Childcare LA,childcare,Los Angeles,CA,34.0522,-118.2437,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Safe Kids Care SF,Safe Kids Care SF,childcare,San Francisco,CA,37.7837,-122.4040,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Children First NYC,Children First NYC,childcare,New York,NY,40.7152,-74.0062,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Windy City Children's Haven,Windy City Children's Haven,childcare,Chicago,IL,41.9032,-87.6442,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Emerald City Kids Care,Emerald City Kids Care,childcare,Seattle,WA,47.6112,-122.3358,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+National Abortion Federation Hotline,National Abortion Federation Hotline,financial_assistance,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Access Reproductive Justice,Access Reproductive Justice,financial_assistance,Oakland,CA,37.8044,-122.2712,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Chicago Abortion Fund,Chicago Abortion Fund,financial_assistance,Chicago,IL,41.9220,-87.6530,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Northwest Abortion Access Fund,Northwest Abortion Access Fund,financial_assistance,Seattle,WA,47.6323,-122.3210,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New York Abortion Access Fund,New York Abortion Access Fund,financial_assistance,New York,NY,40.7328,-73.9901,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Escort Network LA,Planned Parenthood Escort Network LA,accompaniment,Los Angeles,CA,34.0407,-118.2468,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Haven Coalition NYC,Haven Coalition NYC,accompaniment,New York,NY,40.7328,-73.9901,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Reproductive Health Doulas Seattle,Reproductive Health Doulas Seattle,accompaniment,Seattle,WA,47.6323,-122.3210,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Midwest Access Coalition,Midwest Access Coalition,accompaniment,Chicago,IL,41.9220,-87.6530,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Clinics Access Support Network,Clinics Access Support Network,accompaniment,Portland,OR,45.5327,-122.6312,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Philadelphia,Planned Parenthood Philadelphia,reproductive_healthcare,Philadelphia,PA,39.9479,-75.1598,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Boston,Planned Parenthood Boston,reproductive_healthcare,Boston,MA,42.3505,-71.1054,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Rhode Island,Planned Parenthood Rhode Island,reproductive_healthcare,Providence,RI,41.8240,-71.4128,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Connecticut,Planned Parenthood Connecticut,reproductive_healthcare,New Haven,CT,41.3115,-72.9246,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Vermont,Planned Parenthood Vermont,reproductive_healthcare,Williston,VT,44.4434,-73.0818,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood New Jersey,Planned Parenthood New Jersey,reproductive_healthcare,Morristown,NJ,40.7968,-74.4774,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Delaware,Planned Parenthood Delaware,reproductive_healthcare,Wilmington,DE,39.7447,-75.5484,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood DC,Planned Parenthood DC,reproductive_healthcare,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Las Vegas,Planned Parenthood Las Vegas,reproductive_healthcare,Las Vegas,NV,36.1591,-115.1772,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Arizona,Planned Parenthood Arizona,reproductive_healthcare,Phoenix,AZ,33.4408,-112.0801,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Michigan,Planned Parenthood Michigan,reproductive_healthcare,Detroit,MI,42.4122,-83.2305,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Ohio,Planned Parenthood Ohio,reproductive_healthcare,Columbus,OH,40.0196,-83.0090,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Wisconsin,Planned Parenthood Wisconsin,reproductive_healthcare,Milwaukee,WI,43.0664,-87.8844,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Iowa,Planned Parenthood Iowa,reproductive_healthcare,Des Moines,IA,41.6005,-93.6309,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Kansas,Planned Parenthood Kansas,reproductive_healthcare,Wichita,KS,37.6872,-97.2737,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood North Carolina,Planned Parenthood North Carolina,reproductive_healthcare,Raleigh,NC,35.8447,-78.6369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Virginia,Planned Parenthood Virginia,reproductive_healthcare,Richmond,VA,37.5542,-77.4662,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Hawaii,Planned Parenthood Hawaii,reproductive_healthcare,Honolulu,HI,21.2969,-157.8374,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Alaska,Planned Parenthood Alaska,reproductive_healthcare,Anchorage,AK,61.1910,-149.8330,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Planned Parenthood Montana,Planned Parenthood Montana,reproductive_healthcare,Missoula,MT,46.8701,-113.9938,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+East Coast Recovery Haven,East Coast Recovery Haven,recovery_housing,Philadelphia,PA,39.9479,-75.1598,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Boston Recovery Residence,Boston Recovery Residence,recovery_housing,Boston,MA,42.3505,-71.1054,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+DMV Recovery House,DMV Recovery House,recovery_housing,Washington,DC,38.9072,-77.0369,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Southwest Recovery Haven,Southwest Recovery Haven,recovery_housing,Phoenix,AZ,33.4408,-112.0801,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mountain States Recovery House,Mountain States Recovery House,recovery_housing,Denver,CO,39.7476,-104.9856,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Great Lakes Recovery Residence,Great Lakes Recovery Residence,recovery_housing,Detroit,MI,42.3314,-83.0458,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Twin Cities Recovery Haven,Twin Cities Recovery Haven,recovery_housing,Minneapolis,MN,44.9778,-93.2650,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hawaii Recovery Sanctuary,Hawaii Recovery Sanctuary,recovery_housing,Honolulu,HI,21.3099,-157.8581,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rocky Mountain Recovery House,Rocky Mountain Recovery House,recovery_housing,Missoula,MT,46.8721,-113.9940,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Desert Recovery Haven,Desert Recovery Haven,recovery_housing,Las Vegas,NV,36.1699,-115.1398,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Philadelphia Children's Care,Philadelphia Children's Care,childcare,Philadelphia,PA,39.9500,-75.1472,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Boston Kids Haven,Boston Kids Haven,childcare,Boston,MA,42.3501,-71.1056,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Capital Region Children's Support,Capital Region Children's Support,childcare,Washington,DC,38.8977,-77.0165,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Mile High Kids Care,Mile High Kids Care,childcare,Denver,CO,39.7294,-104.9847,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Motor City Children's Haven,Motor City Children's Haven,childcare,Detroit,MI,42.3314,-83.0458,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Twin Cities Children's Care,Twin Cities Children's Care,childcare,Minneapolis,MN,44.9778,-93.2723,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Aloha Children's Haven,Aloha Children's Haven,childcare,Honolulu,HI,21.3070,-157.8624,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Big Sky Children's Care,Big Sky Children's Care,childcare,Missoula,MT,46.8721,-113.9955,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Desert Children's Support,Desert Children's Support,childcare,Las Vegas,NV,36.1672,-115.1485,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Phoenix Children's Haven,Phoenix Children's Haven,childcare,Phoenix,AZ,33.4519,-112.0630,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Pennsylvania Abortion Fund,Pennsylvania Abortion Fund,financial_assistance,Philadelphia,PA,39.9479,-75.1598,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Eastern Massachusetts Abortion Fund,Eastern Massachusetts Abortion Fund,financial_assistance,Boston,MA,42.3736,-71.1097,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+DC Abortion Fund,DC Abortion Fund,financial_assistance,Washington,DC,38.9170,-77.0387,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Maryland Abortion Fund,Maryland Abortion Fund,financial_assistance,Baltimore,MD,39.3091,-76.6105,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Virginia League for Planned Parenthood,Virginia League for Planned Parenthood,financial_assistance,Richmond,VA,37.5407,-77.4360,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Colorado Abortion Fund,Colorado Abortion Fund,financial_assistance,Denver,CO,39.7392,-104.9903,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+New Mexico Religious Coalition for Reproductive Choice,New Mexico Religious Coalition for Reproductive Choice,financial_assistance,Albuquerque,NM,35.0844,-106.6504,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Nevada Abortion Resources Fund,Nevada Abortion Resources Fund,financial_assistance,Las Vegas,NV,36.1699,-115.1398,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Arizona Abortion Fund,Arizona Abortion Fund,financial_assistance,Phoenix,AZ,33.4484,-112.0740,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Michigan Abortion Fund,Michigan Abortion Fund,financial_assistance,Detroit,MI,42.3314,-83.0458,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ohio Abortion Fund,Ohio Abortion Fund,financial_assistance,Columbus,OH,39.9612,-83.0007,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Women's Fund of Wisconsin,Women's Fund of Wisconsin,financial_assistance,Madison,WI,43.0731,-89.4012,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Iowa Abortion Access Fund,Iowa Abortion Access Fund,financial_assistance,Iowa City,IA,41.6611,-91.5302,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Kansas Abortion Fund,Kansas Abortion Fund,financial_assistance,Kansas City,KS,39.1141,-94.6275,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+North Carolina Abortion Fund,North Carolina Abortion Fund,financial_assistance,Raleigh,NC,35.7796,-78.6382,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hawaii Abortion Support Collective,Hawaii Abortion Support Collective,financial_assistance,Honolulu,HI,21.3099,-157.8581,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alaska Abortion Fund,Alaska Abortion Fund,financial_assistance,Anchorage,AK,61.2181,-149.9003,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Montana Abortion Fund,Montana Abortion Fund,financial_assistance,Missoula,MT,46.8721,-113.9940,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Philadelphia Abortion Care Network,Philadelphia Abortion Care Network,accompaniment,Philadelphia,PA,39.9479,-75.1598,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Boston Reproductive Doula Collective,Boston Reproductive Doula Collective,accompaniment,Boston,MA,42.3505,-71.1054,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+DC Metro Abortion Doulas,DC Metro Abortion Doulas,accompaniment,Washington,DC,38.9170,-77.0387,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Rocky Mountain Abortion Doulas,Rocky Mountain Abortion Doulas,accompaniment,Denver,CO,39.7392,-104.9903,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Desert Reproductive Support Network,Desert Reproductive Support Network,accompaniment,Las Vegas,NV,36.1699,-115.1398,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Southwest Abortion Doula Collective,Southwest Abortion Doula Collective,accompaniment,Albuquerque,NM,35.0844,-106.6504,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Motor City Reproductive Support,Motor City Reproductive Support,accompaniment,Detroit,MI,42.3314,-83.0458,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Ohio Reproductive Doula Network,Ohio Reproductive Doula Network,accompaniment,Columbus,OH,39.9612,-83.0007,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Wisconsin Abortion Doula Collective,Wisconsin Abortion Doula Collective,accompaniment,Madison,WI,43.0731,-89.4012,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Iowa Reproductive Support Network,Iowa Reproductive Support Network,accompaniment,Iowa City,IA,41.6611,-91.5302,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Hawaii Abortion Access Ohana,Hawaii Abortion Access Ohana,accompaniment,Honolulu,HI,21.3099,-157.8581,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z
+Alaska Reproductive Justice Network,Alaska Reproductive Justice Network,accompaniment,Anchorage,AK,61.2181,-149.9003,2025-11-17T22:53:10.000Z,2025-11-17T22:53:10.000Z

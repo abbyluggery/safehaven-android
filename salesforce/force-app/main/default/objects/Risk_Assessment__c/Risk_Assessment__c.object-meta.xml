@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Risk Assessment</label>
+    <pluralLabel>Risk Assessments</pluralLabel>
+    <nameField>
+        <label>Assessment ID</label>
+        <type>AutoNumber</type>
+        <displayFormat>RA-{0000000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>Private</sharingModel>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+
+    <description>AI-powered risk assessment for domestic violence survivors. Analyzes incident patterns to identify elevated risk and enable proactive intervention.</description>
+
+    <!-- Relationships -->
+    <fields>
+        <fullName>Survivor_Profile__c</fullName>
+        <label>Survivor Profile</label>
+        <type>Lookup</type>
+        <referenceTo>Survivor_Profile__c</referenceTo>
+        <relationshipLabel>Risk Assessments</relationshipLabel>
+        <relationshipName>Risk_Assessments</relationshipName>
+        <required>true</required>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Link to survivor profile</description>
+    </fields>
+
+    <fields>
+        <fullName>SafeHaven_Profile__c</fullName>
+        <label>SafeHaven Profile</label>
+        <type>Lookup</type>
+        <referenceTo>SafeHaven_Profile__c</referenceTo>
+        <relationshipLabel>Risk Assessments</relationshipLabel>
+        <relationshipName>Risk_Assessments</relationshipName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link to user's SafeHaven profile</description>
+    </fields>
+
+    <!-- AI-Generated Risk Scores -->
+    <fields>
+        <fullName>Overall_Risk_Score__c</fullName>
+        <label>Overall Risk Score</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Overall risk score (0-100, where 100 is highest risk)</description>
+    </fields>
+
+    <fields>
+        <fullName>Risk_Level__c</fullName>
+        <label>Risk Level</label>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>low</fullName>
+                    <label>Low Risk (0-25)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>moderate</fullName>
+                    <label>Moderate Risk (26-50)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>high</fullName>
+                    <label>High Risk (51-75)</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>critical</fullName>
+                    <label>Critical Risk (76-100)</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>Risk category based on score</description>
+    </fields>
+
+    <!-- Risk Factor Scores (Sub-scores) -->
+    <fields>
+        <fullName>Escalation_Risk_Score__c</fullName>
+        <label>Escalation Risk Score</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Risk of violence escalation (0-100)</description>
+    </fields>
+
+    <fields>
+        <fullName>Lethality_Risk_Score__c</fullName>
+        <label>Lethality Risk Score</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Risk of lethal violence (0-100)</description>
+    </fields>
+
+    <fields>
+        <fullName>Frequency_Risk_Score__c</fullName>
+        <label>Frequency Risk Score</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Incident frequency risk (0-100)</description>
+    </fields>
+
+    <fields>
+        <fullName>Isolation_Risk_Score__c</fullName>
+        <label>Isolation Risk Score</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Risk from social isolation (0-100)</description>
+    </fields>
+
+    <!-- Pattern Detection (AI Analysis) -->
+    <fields>
+        <fullName>Detected_Patterns__c</fullName>
+        <label>Detected Patterns</label>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>increasing_frequency</fullName>
+                    <label>Increasing Frequency</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>escalating_severity</fullName>
+                    <label>Escalating Severity</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>weapons_involved</fullName>
+                    <label>Weapons Involved</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>strangulation_choking</fullName>
+                    <label>Strangulation/Choking</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>threats_to_kill</fullName>
+                    <label>Threats to Kill</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>stalking_behavior</fullName>
+                    <label>Stalking Behavior</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>controlling_behavior</fullName>
+                    <label>Controlling Behavior</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>sexual_violence</fullName>
+                    <label>Sexual Violence</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>violence_while_pregnant</fullName>
+                    <label>Violence While Pregnant</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>substance_abuse_present</fullName>
+                    <label>Substance Abuse Present</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>separation_violence</fullName>
+                    <label>Separation Violence</label>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>multiple_incident_types</fullName>
+                    <label>Multiple Incident Types</label>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <description>AI-detected dangerous patterns from incident history</description>
+    </fields>
+
+    <!-- Incident Analysis -->
+    <fields>
+        <fullName>Total_Incidents_Analyzed__c</fullName>
+        <label>Total Incidents Analyzed</label>
+        <type>Number</type>
+        <precision>4</precision>
+        <scale>0</scale>
+        <description>Number of incidents included in this assessment</description>
+    </fields>
+
+    <fields>
+        <fullName>Incidents_Last_30_Days__c</fullName>
+        <label>Incidents (Last 30 Days)</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Number of incidents in past 30 days</description>
+    </fields>
+
+    <fields>
+        <fullName>Incidents_Last_90_Days__c</fullName>
+        <label>Incidents (Last 90 Days)</label>
+        <type>Number</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>Number of incidents in past 90 days</description>
+    </fields>
+
+    <fields>
+        <fullName>Days_Since_Last_Incident__c</fullName>
+        <label>Days Since Last Incident</label>
+        <type>Number</type>
+        <precision>4</precision>
+        <scale>0</scale>
+        <description>Number of days since most recent incident</description>
+    </fields>
+
+    <fields>
+        <fullName>Average_Days_Between_Incidents__c</fullName>
+        <label>Average Days Between Incidents</label>
+        <type>Number</type>
+        <precision>5</precision>
+        <scale>1</scale>
+        <description>Average time between incidents (trend indicator)</description>
+    </fields>
+
+    <!-- AI-Generated Insights -->
+    <fields>
+        <fullName>AI_Summary__c</fullName>
+        <label>AI Summary</label>
+        <type>LongTextArea</type>
+        <length>5000</length>
+        <visibleLines>8</visibleLines>
+        <description>AI-generated summary of risk factors and patterns</description>
+    </fields>
+
+    <fields>
+        <fullName>Recommended_Actions__c</fullName>
+        <label>Recommended Actions</label>
+        <type>LongTextArea</type>
+        <length>5000</length>
+        <visibleLines>8</visibleLines>
+        <description>AI-generated safety recommendations</description>
+    </fields>
+
+    <fields>
+        <fullName>Crisis_Resources__c</fullName>
+        <label>Crisis Resources</label>
+        <type>LongTextArea</type>
+        <length>5000</length>
+        <visibleLines>6</visibleLines>
+        <description>Personalized crisis resource list (24/7 hotlines, shelters, etc.)</description>
+    </fields>
+
+    <!-- Lethality Assessment (Danger Assessment Tool) -->
+    <fields>
+        <fullName>Has_Access_To_Weapons__c</fullName>
+        <label>Has Access to Weapons</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Perpetrator has access to weapons (firearms, knives)</description>
+    </fields>
+
+    <fields>
+        <fullName>Threatened_With_Weapon__c</fullName>
+        <label>Threatened with Weapon</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Survivor has been threatened with a weapon</description>
+    </fields>
+
+    <fields>
+        <fullName>Strangulation_Attempted__c</fullName>
+        <label>Strangulation Attempted</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Perpetrator has attempted strangulation (HIGH LETHALITY INDICATOR)</description>
+    </fields>
+
+    <fields>
+        <fullName>Threats_To_Kill__c</fullName>
+        <label>Threats to Kill</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Perpetrator has threatened to kill survivor</description>
+    </fields>
+
+    <fields>
+        <fullName>Extremely_Jealous__c</fullName>
+        <label>Extremely Jealous/Controlling</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Perpetrator exhibits extreme jealousy or controlling behavior</description>
+    </fields>
+
+    <fields>
+        <fullName>Recent_Separation__c</fullName>
+        <label>Recent Separation</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Survivor has recently separated or attempted to leave (HIGH RISK PERIOD)</description>
+    </fields>
+
+    <!-- AI Processing Metadata -->
+    <fields>
+        <fullName>Assessment_Date__c</fullName>
+        <label>Assessment Date</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When assessment was performed</description>
+    </fields>
+
+    <fields>
+        <fullName>AI_Model_Version__c</fullName>
+        <label>AI Model Version</label>
+        <type>Text</type>
+        <length>100</length>
+        <description>Version of Claude AI used (e.g., claude-3-haiku-20240307)</description>
+    </fields>
+
+    <fields>
+        <fullName>AI_Confidence_Score__c</fullName>
+        <label>AI Confidence Score</label>
+        <type>Percent</type>
+        <precision>3</precision>
+        <scale>0</scale>
+        <description>AI confidence in assessment (0-100%)</description>
+    </fields>
+
+    <fields>
+        <fullName>Processed_By_AI__c</fullName>
+        <label>Processed by AI</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Whether AI analysis was performed</description>
+    </fields>
+
+    <fields>
+        <fullName>Manual_Review_Required__c</fullName>
+        <label>Manual Review Required</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Flags cases needing human expert review</description>
+    </fields>
+
+    <fields>
+        <fullName>Manual_Review_Notes__c</fullName>
+        <label>Manual Review Notes</label>
+        <type>LongTextArea</type>
+        <length>5000</length>
+        <visibleLines>5</visibleLines>
+        <description>Notes from manual review by DV advocate</description>
+    </fields>
+
+    <!-- Alert Flags -->
+    <fields>
+        <fullName>Alert_Sent__c</fullName>
+        <label>Alert Sent</label>
+        <type>Checkbox</type>
+        <defaultValue>false</defaultValue>
+        <description>Whether crisis alert was sent to survivor</description>
+    </fields>
+
+    <fields>
+        <fullName>Alert_Sent_Date__c</fullName>
+        <label>Alert Sent Date</label>
+        <type>DateTime</type>
+        <description>When alert was sent</description>
+    </fields>
+
+    <!-- Timestamps -->
+    <fields>
+        <fullName>Created_Timestamp__c</fullName>
+        <label>Created Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>When assessment record was created</description>
+    </fields>
+
+    <fields>
+        <fullName>Last_Modified_Timestamp__c</fullName>
+        <label>Last Modified Timestamp</label>
+        <type>DateTime</type>
+        <required>true</required>
+        <description>Last modification time</description>
+    </fields>
+</CustomObject>
