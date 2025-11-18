@@ -135,52 +135,6 @@ fun HomeScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Critical Risk Alert (if present)
-            if (hasCriticalRisk) {
-                Card(
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.errorContainer
-                    )
-                ) {
-                    Column(modifier = Modifier.padding(16.dp)) {
-                        Row(
-                            horizontalArrangement = Arrangement.spacedBy(8.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Icon(
-                                Icons.Default.Warning,
-                                contentDescription = null,
-                                tint = MaterialTheme.colorScheme.error
-                            )
-                            Text(
-                                text = "⚠️ CRITICAL RISK DETECTED",
-                                style = MaterialTheme.typography.titleMedium,
-                                fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
-                                color = MaterialTheme.colorScheme.error
-                            )
-                        }
-                        Spacer(modifier = Modifier.height(8.dp))
-                        Text(
-                            text = latestRiskAssessment?.aiSummary ?: "Your latest risk assessment indicates elevated danger. Please review safety recommendations.",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onErrorContainer
-                        )
-                        Spacer(modifier = Modifier.height(12.dp))
-                        Button(
-                            onClick = onNavigateToRiskAssessment,
-                            modifier = Modifier.fillMaxWidth(),
-                            colors = ButtonDefaults.buttonColors(
-                                containerColor = MaterialTheme.colorScheme.error
-                            )
-                        ) {
-                            Text("View Risk Assessment")
-                        }
-                    }
-                }
-                Spacer(modifier = Modifier.height(16.dp))
-            }
-
             // SOS Panic Button Section
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -375,19 +329,36 @@ fun HomeScreen(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            FeatureCard(
-                title = "AI Risk Assessment",
-                description = "AI-powered pattern detection and safety recommendations",
-                icon = {
-                    Icon(
-                        Icons.Default.Analytics,
-                        contentDescription = null,
-                        tint = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.size(40.dp)
+            // AI Risk Assessment with subtle notification indicator
+            Box {
+                FeatureCard(
+                    title = "AI Risk Assessment",
+                    description = "AI-powered pattern detection and safety recommendations",
+                    icon = {
+                        Icon(
+                            Icons.Default.Analytics,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.size(40.dp)
+                        )
+                    },
+                    onClick = onNavigateToRiskAssessment
+                )
+
+                // Subtle notification dot if unacknowledged assessment exists
+                if (latestRiskAssessment?.userAcknowledged == false) {
+                    Box(
+                        modifier = Modifier
+                            .align(Alignment.TopEnd)
+                            .padding(top = 12.dp, end = 12.dp)
+                            .size(8.dp)
+                            .background(
+                                MaterialTheme.colorScheme.primary,
+                                shape = androidx.compose.foundation.shape.CircleShape
+                            )
                     )
-                },
-                onClick = onNavigateToRiskAssessment
-            )
+                }
+            }
         }
     }
 }

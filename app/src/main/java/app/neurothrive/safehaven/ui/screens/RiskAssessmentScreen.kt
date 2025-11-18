@@ -310,7 +310,7 @@ private fun LethalityIndicatorsCard(assessment: RiskAssessment) {
                     tint = MaterialTheme.colorScheme.error
                 )
                 Text(
-                    text = "Critical Lethality Indicators",
+                    text = "High-Risk Indicators Present",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.error
@@ -321,41 +321,41 @@ private fun LethalityIndicatorsCard(assessment: RiskAssessment) {
 
             if (assessment.strangulationAttempted) {
                 LethalityIndicatorItem(
-                    icon = "⚠️",
+                    color = Color(0xFFD32F2F),
                     text = "Strangulation Attempted",
-                    description = "Increases homicide risk by 750%"
+                    description = "Research shows this significantly increases risk"
                 )
             }
 
             if (assessment.threatsToKill) {
                 LethalityIndicatorItem(
-                    icon = "💀",
-                    text = "Threats to Kill",
-                    description = "Explicit threats to kill you or children"
+                    color = Color(0xFFC62828),
+                    text = "Threats Made",
+                    description = "Explicit threats to harm you or children"
                 )
             }
 
             if (assessment.threatenedWithWeapon || assessment.hasWeapons) {
                 LethalityIndicatorItem(
-                    icon = "🔪",
-                    text = "Weapons Involved",
-                    description = "Perpetrator has access to or has used weapons"
+                    color = Color(0xFFB71C1C),
+                    text = "Weapons Present",
+                    description = "Access to or use of weapons documented"
                 )
             }
 
             if (assessment.extremelyJealous) {
                 LethalityIndicatorItem(
-                    icon = "🔒",
-                    text = "Extreme Jealousy/Control",
-                    description = "Controlling behavior and isolation tactics"
+                    color = Color(0xFFE64A19),
+                    text = "Controlling Behavior",
+                    description = "Extreme jealousy and isolation tactics"
                 )
             }
 
             if (assessment.recentSeparation) {
                 LethalityIndicatorItem(
-                    icon = "💔",
+                    color = Color(0xFFD84315),
                     text = "Recent Separation",
-                    description = "Highest risk period for lethal violence"
+                    description = "Separation attempts increase risk"
                 )
             }
         }
@@ -363,13 +363,17 @@ private fun LethalityIndicatorsCard(assessment: RiskAssessment) {
 }
 
 @Composable
-private fun LethalityIndicatorItem(icon: String, text: String, description: String) {
+private fun LethalityIndicatorItem(color: Color, text: String, description: String) {
     Column(modifier = Modifier.padding(vertical = 8.dp)) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(text = icon, style = MaterialTheme.typography.titleMedium)
+            Box(
+                modifier = Modifier
+                    .size(8.dp)
+                    .background(color, shape = androidx.compose.foundation.shape.CircleShape)
+            )
             Text(
                 text = text,
                 style = MaterialTheme.typography.bodyMedium,
@@ -381,7 +385,7 @@ private fun LethalityIndicatorItem(icon: String, text: String, description: Stri
             text = description,
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onErrorContainer,
-            modifier = Modifier.padding(start = 32.dp)
+            modifier = Modifier.padding(start = 16.dp)
         )
     }
 }
@@ -420,6 +424,8 @@ private fun DetectedPatternsCard(assessment: RiskAssessment) {
 
 @Composable
 private fun PatternItem(pattern: DetectedPattern) {
+    val patternColor = Color(android.graphics.Color.parseColor(pattern.getColorHex()))
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -430,9 +436,11 @@ private fun PatternItem(pattern: DetectedPattern) {
             .padding(12.dp),
         horizontalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Text(
-            text = pattern.getIcon(),
-            style = MaterialTheme.typography.titleMedium
+        Box(
+            modifier = Modifier
+                .size(10.dp)
+                .background(patternColor, shape = androidx.compose.foundation.shape.CircleShape)
+                .padding(top = 6.dp)
         )
         Column {
             Text(

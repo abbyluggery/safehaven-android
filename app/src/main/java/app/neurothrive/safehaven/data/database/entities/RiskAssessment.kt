@@ -176,20 +176,20 @@ enum class DetectedPattern(val value: String, val displayName: String) {
         }
     }
 
-    fun getIcon(): String {
+    fun getColorHex(): String {
         return when (this) {
-            INCREASING_FREQUENCY -> "⏱️"
-            ESCALATING_SEVERITY -> "📈"
-            WEAPONS_INVOLVED -> "🔪"
-            STRANGULATION_CHOKING -> "⚠️"
-            THREATS_TO_KILL -> "💀"
-            STALKING_BEHAVIOR -> "👁️"
-            CONTROLLING_BEHAVIOR -> "🔒"
-            SEXUAL_VIOLENCE -> "🚫"
-            VIOLENCE_WHILE_PREGNANT -> "🤰"
-            SUBSTANCE_ABUSE_PRESENT -> "🍺"
-            SEPARATION_VIOLENCE -> "💔"
-            MULTIPLE_INCIDENT_TYPES -> "📊"
+            INCREASING_FREQUENCY -> "#FF6B6B"
+            ESCALATING_SEVERITY -> "#EE5A24"
+            WEAPONS_INVOLVED -> "#D32F2F"
+            STRANGULATION_CHOKING -> "#C62828"
+            THREATS_TO_KILL -> "#B71C1C"
+            STALKING_BEHAVIOR -> "#E64A19"
+            CONTROLLING_BEHAVIOR -> "#D84315"
+            SEXUAL_VIOLENCE -> "#BF360C"
+            VIOLENCE_WHILE_PREGNANT -> "#FF5722"
+            SUBSTANCE_ABUSE_PRESENT -> "#F4511E"
+            SEPARATION_VIOLENCE -> "#E53935"
+            MULTIPLE_INCIDENT_TYPES -> "#FF7043"
         }
     }
 }
