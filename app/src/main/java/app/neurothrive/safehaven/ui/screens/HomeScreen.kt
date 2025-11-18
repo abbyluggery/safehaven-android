@@ -16,6 +16,7 @@ import app.neurothrive.safehaven.ui.components.FeatureCard
 import app.neurothrive.safehaven.ui.components.SOSPanicButton
 import app.neurothrive.safehaven.ui.viewmodels.HomeViewModel
 import app.neurothrive.safehaven.ui.viewmodels.SOSViewModel
+import app.neurothrive.safehaven.ui.viewmodels.RiskAssessmentViewModel
 
 /**
  * Home Screen - Main Dashboard
@@ -26,6 +27,7 @@ import app.neurothrive.safehaven.ui.viewmodels.SOSViewModel
 fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel(),
     sosViewModel: SOSViewModel = hiltViewModel(),
+    riskViewModel: RiskAssessmentViewModel = hiltViewModel(),
     userSession: UserSession = hiltViewModel(),
     onNavigateToCamera: () -> Unit,
     onNavigateToIncidents: () -> Unit,
@@ -36,7 +38,8 @@ fun HomeScreen(
     onNavigateToSettings: () -> Unit,
     onNavigateToHealthcare: () -> Unit = {},
     onNavigateToAbuseResources: () -> Unit = {},
-    onNavigateToEmergencyContacts: () -> Unit = {}
+    onNavigateToEmergencyContacts: () -> Unit = {},
+    onNavigateToRiskAssessment: () -> Unit = {}
 ) {
     // Collect state from ViewModel
     val stats by viewModel.stats.collectAsState()
@@ -44,6 +47,10 @@ fun HomeScreen(
 
     // Collect SOS state
     val isSOSActive by sosViewModel.isSOSActive.collectAsState()
+
+    // Collect risk assessment state
+    val latestRiskAssessment by riskViewModel.latestAssessment.collectAsState()
+    val hasCriticalRisk by riskViewModel.hasCriticalRisk.collectAsState()
 
     // Load dashboard when screen launches
     LaunchedEffect(currentUserId) {
@@ -127,6 +134,52 @@ fun HomeScreen(
             }
 
             Spacer(modifier = Modifier.height(24.dp))
+
+            // Critical Risk Alert (if present)
+            if (hasCriticalRisk) {
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.errorContainer
+                    )
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(
+                                Icons.Default.Warning,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.error
+                            )
+                            Text(
+                                text = "⚠️ CRITICAL RISK DETECTED",
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.error
+                            )
+                        }
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = latestRiskAssessment?.aiSummary ?: "Your latest risk assessment indicates elevated danger. Please review safety recommendations.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onErrorContainer
+                        )
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Button(
+                            onClick = onNavigateToRiskAssessment,
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = MaterialTheme.colorScheme.error
+                            )
+                        ) {
+                            Text("View Risk Assessment")
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(16.dp))
+            }
 
             // SOS Panic Button Section
             Card(
@@ -318,6 +371,22 @@ fun HomeScreen(
                     )
                 },
                 onClick = onNavigateToAbuseResources
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            FeatureCard(
+                title = "AI Risk Assessment",
+                description = "AI-powered pattern detection and safety recommendations",
+                icon = {
+                    Icon(
+                        Icons.Default.Analytics,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(40.dp)
+                    )
+                },
+                onClick = onNavigateToRiskAssessment
             )
         }
     }

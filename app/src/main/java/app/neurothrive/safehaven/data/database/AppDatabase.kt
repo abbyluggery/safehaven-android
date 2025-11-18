@@ -23,9 +23,10 @@ import app.neurothrive.safehaven.data.database.entities.*
  * 5. LegalResource - Intersectional resource database (58 categories - includes healthcare)
  * 6. SurvivorProfile - Extended demographic data
  * 7. HealthcareJourney - Reproductive healthcare travel coordination
- * 8. EmergencyContact - Trusted contacts for SOS alerts (NEW)
- * 9. SOSSession - SOS panic button activation tracking (NEW)
- * 10. SOSLocationUpdate - GPS breadcrumbs during SOS (NEW)
+ * 8. EmergencyContact - Trusted contacts for SOS alerts
+ * 9. SOSSession - SOS panic button activation tracking
+ * 10. SOSLocationUpdate - GPS breadcrumbs during SOS
+ * 11. RiskAssessment - AI-powered risk prediction and crisis detection (NEW)
  */
 @Database(
     entities = [
@@ -38,9 +39,10 @@ import app.neurothrive.safehaven.data.database.entities.*
         HealthcareJourney::class,
         EmergencyContact::class,
         SOSSession::class,
-        SOSLocationUpdate::class
+        SOSLocationUpdate::class,
+        RiskAssessment::class
     ],
-    version = 3,
+    version = 4,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -55,6 +57,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun healthcareJourneyDao(): HealthcareJourneyDao
     abstract fun emergencyContactDao(): EmergencyContactDao
     abstract fun sosSessionDao(): SOSSessionDao
+    abstract fun riskAssessmentDao(): RiskAssessmentDao
 
     companion object {
         const val DATABASE_NAME = "safehaven_db"

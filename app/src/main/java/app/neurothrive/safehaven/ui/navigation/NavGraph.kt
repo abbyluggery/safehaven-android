@@ -37,6 +37,9 @@ sealed class Screen(val route: String) {
     // Abuse Resources & SOS
     object AbuseResources : Screen("abuse_resources")
     object EmergencyContacts : Screen("emergency_contacts")
+
+    // AI Risk Assessment
+    object RiskAssessment : Screen("risk_assessment")
 }
 
 /**
@@ -96,7 +99,8 @@ fun SafeHavenNavGraph(
                 onNavigateToSettings = { navController.navigate(Screen.Settings.route) },
                 onNavigateToHealthcare = { navController.navigate(Screen.HealthcareResourceFinder.route) },
                 onNavigateToAbuseResources = { navController.navigate(Screen.AbuseResources.route) },
-                onNavigateToEmergencyContacts = { navController.navigate(Screen.EmergencyContacts.route) }
+                onNavigateToEmergencyContacts = { navController.navigate(Screen.EmergencyContacts.route) },
+                onNavigateToRiskAssessment = { navController.navigate(Screen.RiskAssessment.route) }
             )
         }
 
@@ -220,6 +224,15 @@ fun SafeHavenNavGraph(
         composable(Screen.EmergencyContacts.route) {
             EmergencyContactsScreen(
                 onBack = { navController.popBackStack() }
+            )
+        }
+
+        // AI Risk Assessment
+        composable(Screen.RiskAssessment.route) {
+            RiskAssessmentScreen(
+                onBack = { navController.popBackStack() },
+                onNavigateToSafetyPlan = { navController.navigate(Screen.SafetyPlan.route) },
+                onNavigateToEmergencyContacts = { navController.navigate(Screen.EmergencyContacts.route) }
             )
         }
     }
