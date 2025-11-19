@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
 }
 
@@ -16,10 +16,8 @@ android {
         versionCode = 1
         versionName = "1.0.0"
 
-        kapt {
-            arguments {
-                arg("room.schemaLocation", "$projectDir/schemas")
-            }
+        ksp {
+            arg("room.schemaLocation", "$projectDir/schemas")
         }
     }
 
@@ -58,9 +56,19 @@ dependencies {
     // Activity Compose (for standalone app)
     implementation("androidx.activity:activity-compose:1.8.1")
 
+    // Jetpack Compose Navigation
+    implementation("androidx.navigation:navigation-compose:2.7.6")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    // Compose Material Icons Extended
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
+
+    // Accompanist Permissions (for camera permissions)
+    implementation("com.google.accompanist:accompanist-permissions:0.32.0")
+
     // Hilt (required in app module for @HiltAndroidApp)
     implementation("com.google.dagger:hilt-android:2.48.1")
-    kapt("com.google.dagger:hilt-compiler:2.48.1")
+    ksp("com.google.dagger:hilt-compiler:2.48.1")
 
     // Optional: AWS S3, Biometric, WorkManager, DateTime
     implementation("com.amazonaws:aws-android-sdk-s3:2.75.0")
